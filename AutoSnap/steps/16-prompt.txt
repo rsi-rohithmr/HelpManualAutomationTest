@@ -1,0 +1,175 @@
+
+=====================
+Full Prompt for Step 16
+=====================
+
+-------- System Instruction --------
+You are a world-class Playwright code-generation expert, relentlessly focused on SPEED and ROBUSTNESS. Your primary job is to generate the most direct and successful Playwright code for the next action, ensuring it executes quickly and reliably. Never use text-based locators for screenshots; prefer stable attributes like data-testid/role/label and container elements.
+
+-------- Scenario Text --------
+```json
+{
+  "thinking": "Screenshots to capture:\n1. ./img/mo1.png: Screenshot of the 'More Options' menu in the OmegaAI Image Viewer toolbar.\n2. ./img/mo2.png: Screenshot of the Toggles options in the 'More Options' menu.\n3. ./img/mo3.png: Screenshot demonstrating the 'Overlay' toggle functionality from the Toggles options.\n4. ./img/mo4.png: Screenshot of the 'Link Series' options in the 'More Options' menu.\n5. ./img/mo5.png: Screenshot of the 'Download' options in the 'More Options' menu.\n6. ./img/mo6-1.png: Screenshot of the 'Settings' category within the 'More Options' menu, specifically showcasing the Hanging Protocols section.\n7. ./img/More%20Settings.png: Screenshot of the extended 'More Settings' menu showing additional toggles and settings options.\n8. ./img/mo7.png: Screenshot of the 'Popout in Window' feature from the 'More Options' menu.\n9. ./img/mo8.png: Screenshot of the 'Fullscreen Mode' toggle functionality.\n\nNavigation plan: Start at Worklist → Select patient → Open Image Viewer from the wheel → Open 'More Options' menu → Sequentially navigate through each submenu or feature (e.g., Toggles, Link Series, Download, Settings) → Capture screenshots in the order they appear in the document. The plan minimizes redundant navigation and ensures an efficient workflow.",
+  "instructions": "1. From the Worklist page, locate the main data table in the center of the screen displaying patient records with columns for names, dates, and status indicators.\n2. Click on the third patient name from the top in the leftmost column to bring up the patient wheel interface.\n3. Wait until the wheel interface appears, displaying options such as Image Viewer, Reports, and other tools.\n4. Click on the 'Image Viewer' button (center of the wheel with an image icon) to open the OmegaAI Image Viewer interface.\n5. Wait until the Image Viewer loads completely, ensuring the top toolbar, main viewport, and side panels are visible.\n6. Locate the 'More Options' menu (three vertical dots icon) in the top-right corner of the toolbar and click it to open the dropdown menu.\n7. Wait until the 'More Options' menu expands, displaying all available options such as Print, Copy to Clipboard, Toggles, Settings, etc.\n8. Take a screenshot of the entire 'More Options' menu dropdown showing all visible options, including Print, Copy to Clipboard, Burn Study, Toggles, Link Series, Download, Settings, and other listed features, to document the menu's main layout and options. Save as ./img/mo1.png.\n9. Click on the 'Toggles' option within the 'More Options' menu to reveal the Toggles submenu.\n10. Wait until the Toggles submenu appears, displaying options such as Overlay, Scout Lines, Unified Stack, and Calibrated Ruler.\n11. Take a screenshot of the Toggles submenu showing all toggle options in the dropdown, including their labels and intended positions. Save as ./img/mo2.png.\n12. Click on the 'Overlay' toggle within the Toggles submenu to activate the overlay functionality.\n13. Wait until the overlay layer becomes visible on the main viewport.\n14. Take a screenshot of the main viewport with the 'Overlay' toggle activated, showing the overlay applied to the image area and the Toggle menu still visible. Save as ./img/mo3.png.\n15. Close the Toggles submenu by clicking outside the dropdown.\n16. Click on the 'Link Series' option within the 'More Options' menu to reveal the Link Series submenu.\n17. Wait until the Link Series submenu appears, displaying options such as Unlink, Manual Link, and Plane Link.\n18. Take a screenshot of the Link Series submenu showing all listed options and their respective toggle states, to document the linking options available. Save as ./img/mo4.png.\n19. Close the Link Series submenu by clicking outside the dropdown.\n20. Click on the 'Download' option within the 'More Options' menu to reveal the Download submenu.\n21. Wait until the Download submenu appears, displaying options such as Download Image and Download Study.\n22. Take a screenshot of the Download submenu showing all download options, including their labels and layout. Save as ./img/mo5.png.\n23. Close the Download submenu by clicking outside the dropdown.\n24. Click on the 'Settings' option within the 'More Options' menu to open the Settings category.\n25. Wait until the Settings category menu appears, displaying options such as Hanging Protocols, Customize Toolbar, DICOM Header Tags, and About Image Viewer.\n26. Take a screenshot of the Settings category menu, ensuring all listed sections such as Hanging Protocols and their layout are visible. Save as ./img/mo6-1.png.\n27. Scroll down within the Settings category to reveal extended options such as Toggle Auto Open Study Explorer, Toggle Reset Markup Tools, and Toggle Autohide Viewport Menu.\n28. Take a screenshot of the extended Settings menu showing additional toggles and their labels, to document the full range of settings available. Save as ./img/More%20Settings.png.\n29. Close the Settings menu by clicking outside the dropdown.\n30. Click on the 'Popout in Window' option within the 'More Options' menu to activate the popout feature.\n31. Wait until the image opens in a separate window, ensuring the new window is fully visible.\n32. Take a screenshot of the entire Image Viewer interface in the separate popout window, showing the image and toolbar. Save as ./img/mo7.png.\n33. Close the popout window and return to the main Image Viewer interface.\n34. Click on the 'Fullscreen Mode' toggle button (icon in the top-right corner resembling a screen) within the toolbar to activate fullscreen mode.\n35. Wait until the Image Viewer enters fullscreen mode, ensuring the top toolbar and side panels are hidden, leaving only the image visible.\n36. Take a screenshot of the Image Viewer in fullscreen mode, showing the image filling the entire screen without any additional UI elements. Save as ./img/mo8.png.\n37. Exit fullscreen mode by clicking the 'Fullscreen Mode' toggle button again to return to the standard interface."
+}
+```
+
+-------- Code Generation Prompt --------
+You are a specialized Playwright automation expert. Your role is to analyze the current state and generate precise, efficient Playwright TypeScript code for the next automation step.
+Input Context
+You will receive:
+
+Current Page URL: The page being automated
+Current Page Screenshot: Visual state of the viewport
+Current Page Visible HTML: Indexed interactive elements (format: 42: <button...>Login</button>)
+Already Executed Code: Previous successful automation steps
+Previous Step Error: Error details if the last step failed
+User Script: Complete automation workflow to execute
+
+Code Generation Framework
+1. Element Selection Strategy
+Base all selections on provided Visible HTML only. Never assume elements exist outside this context.
+Locator Priority (use highest available):
+
+page.getByTestId('stable-test-id')
+page.getByRole('button', { name: 'Submit' })
+page.getByLabel('Username')
+page.getByText('Welcome, User!', { exact: true })
+
+Screenshot Locators: Never use getByText for screenshots. Always target stable containers (test-id, role, or label).
+2. Performance & Reliability Rules
+Mandatory Click Configuration:
+typescriptawait element.click({ force: true });
+All clicks MUST use { force: true } to handle partially obscured elements.
+Prohibited Practices:
+
+page.waitForTimeout() - causes unnecessary delays
+Custom timeout options on actions - rely on Playwright defaults
+.first(), .last(), or index selectors - creates fragility
+
+Trust Playwright's Auto-Waiting: Single, clean action lines are preferred.
+3. Element Uniqueness Requirements
+Your locators must resolve to exactly one element. Achieve uniqueness through:
+
+Scoped selection: page.getByTestId('user-profile').getByRole('button', { name: 'Edit' })
+Avoiding dynamic content (user names, timestamps) in selectors
+Using stable parent containers as scope
+
+4. Action Implementation
+Core Actions:
+
+Click: await locator.click({ force: true });
+Text Input: await locator.fill('text');
+Screenshots: await locator.screenshot({ path: 'filename.png' });
+
+Navigation Strategy:
+
+If target elements aren't visible, look for related controls (dropdowns, menus, expand buttons)
+Click adjacent elements that might reveal hidden content
+Expand collapsed sections to access nested elements
+
+5. Element State Interpretation
+Elements may include state indicators:
+
+(expanded/collapsed) - Visibility state
+(controls-expanded-panel/controls-collapsed-panel) - Control states
+(checked/unchecked/indeterminate) - Toggle states
+(selected) - Active selection
+(current-page) - Navigation state
+(menu-open/menu-closed) - Menu visibility
+(focused) - Keyboard focus
+(required/invalid) - Form states
+(pressed) - Button activation
+
+6. State-Aware Logic
+Toggle Actions: If requesting state change and element is already in desired state, consider action complete.
+State Transitions: If element is not in target state, interact to achieve it.
+Example: If instruction is "expand menu" and menu shows (expanded), no action needed.
+7. Error Recovery Protocol
+When Previous Step Error exists:
+
+The previous locator was likely incorrect
+Generate new code with more stable selectors from the hierarchy
+Do not repeat the failed approach
+
+8. Special Context Handling
+Document Viewers: Left panels typically contain navigation - use these for content access.
+Impossible Instructions: Skip and continue (e.g., "wait 15 minutes", non-existent elements).
+10. Strict Output Format:
+Return a single JSON object with these keys:
+
+"thinking" (REQUIRED for all steps)
+"code" (REQUIRED for all steps)
+"screenshotIntent" (REQUIRED for screenshot steps ONLY)
+
+thinking field requirements:
+
+Clearly analyze the current instruction and its relation to any previous instruction
+Identify the specific goal state for the current action
+Evaluate available elements in the "Current Page Visible HTML", noting their current states
+Compare the current state of the target element to the desired goal state
+Apply state-based action logic: If the element is already in the desired state, consider the action complete. If not in the desired state, plan to interact with it.
+Explain reasoning behind the chosen Playwright action, stating what element will be interacted with and why
+Always mention the current instruction. Only mention previous instruction if one actually exists
+For first step, do not invent or include any previous step thinking
+
+Code field requirements:
+
+1-2 lines of executable Playwright TypeScript
+Each line must start with await
+Do not declare variables
+If all steps complete: { "thinking": "verification of completion", "code": "done" }
+
+Example Output Structure:
+// Example (first step):
+{
+"thinking": "Current instruction: 'Click the Add button'. The user's intent is to initiate the add workflow. The visible HTML shows a button with role='button' and name='Add', which is currently enabled. I will click this button to proceed.",
+"code": "await page.getByRole('button', { name: 'Add' }).click({ force: true });"
+}
+// Example (subsequent step):
+{
+"thinking": "Current instruction: 'Select Dashboard in the sidebar'. Previous instruction: 'Click the Add button'. The 'Dashboard' link in the sidebar is currently not tagged as (current-page) in the visible HTML. The user's intent is to navigate to the Dashboard page. I will click on the 'Dashboard' link.",
+"code": "await page.getByRole('link', { name: 'Dashboard' }).click({ force: true });"
+}
+// Example with screenshot:
+{
+"thinking": "Current instruction: 'Take a screenshot of the user profile section'. Previous instruction: 'Navigate to profile page'. The user's intent is to capture the layout of the user profile for verification. The visible HTML provides a data-testid='user-profile-section', which is a stable selector.",
+"screenshotIntent": "Capturing the user profile section to verify the layout of demographic information and settings that will be used for subsequent validation steps.",
+"code": "await page.getByTestId('user-profile-section').screenshot({ path: 'user-profile.png' });"
+}
+// Example of state-based thinking:
+{
+"thinking": "Current instruction: 'Expand the Settings menu'. The 'Settings' menu item is currently (collapsed) in the visible HTML. The user's intent is to make it (expanded) to access submenu options. I will click the 'Settings' menu item to expand it.",
+"code": "await page.getByRole('menuitem', { name: 'Settings' }).click({ force: true });"
+}
+{
+"thinking": "Current instruction: 'Activate the Dark Mode toggle'. Looking at the HTML, I can see the toggle button has aria-pressed='true' and class 'toggle-active' and the button is tagged as (checked), indicating it's already activated. Since the user wants it activated and it already is, clicking it would deactivate it instead. No action needed - the desired state is already achieved.",
+"code": "await page.waitForTimeout(0);"
+}
+
+
+-------- Context --------
+Page URL: https://team-meta-apim.azure-api.net/imageviewer3d?StudyId=1008&StudyInstanceUIDs=1.2.124.113540.1.2.14130.16949.14387.14660&PatientInfo=1928&IssuerOfPatientID=RAMSOFT&PatientID=1928&internalManagingOrganizationID=1
+
+Previously Executed Code:
+await page.waitForTimeout(0);
+await page.getByText('BLUMEPAT, LNGO MS08').first().click({  force: true , timeout: 20000 });
+await page.waitForTimeout(0);
+await page.getByTestId('imageviewer-icon').click({  force: true , timeout: 20000 });
+await page.getByTestId('MoreVertOutlinedIcon').locator('..').click({  force: true , timeout: 20000 });
+await page.waitForTimeout(0);
+await page.locator('ul[role="menu"]').screenshot({ path: './img/mo1.png' });
+await page.waitForTimeout(0);
+await page.getByRole('menuitem', { name: 'Toggles' }).click({  force: true , timeout: 20000 });
+await page.waitForTimeout(0);
+await page.waitForTimeout(0);
+await page.locator('ul[role="menu"]').screenshot({ path: './img/mo2.png' });
+await page.waitForTimeout(0);
+await page.waitForTimeout(0);
+await page.waitForTimeout(0);
+
+Current Step Error Code:
+None
+
+Previous Step Thinking:
+Current instruction: 'Click on the 'Overlay' toggle within the Toggles submenu to activate the overlay functionality.' Previous instruction: 'Take a screenshot of the Toggles submenu showing all toggle options in the dropdown, including their labels and intended positions. Save as ./img/mo2.png.' The user's intent is to activate the overlay functionality. Looking at the visible HTML, I can see the 'Overlay' menu item (element 25) which has a checkmark icon (CheckIcon) indicating it's already activated/checked. Since the overlay is already in the activated state (as shown by the check icon), clicking it would deactivate it instead of activating it. The desired state is already achieved, so no action is needed.

@@ -1,0 +1,238 @@
+{
+	"resourceType": "Organization",
+	"id": "0",
+	"active": true,
+	"name": "{replaceBy_newOrganizationTestName}",
+	"type": [
+		{
+			"coding": [
+				{
+					"code": "PROV",
+					"display": "Healthcare Provider"
+				}
+			]
+		}
+	],
+	"identifier": [
+		{
+			"use": "usual",
+			"type": {
+				"coding": [
+					{
+						"code": "NPI"
+					}
+				]
+			},
+			"system": "",
+			"value": "{replaceBy_newOrganizationIdentifierID}"
+		}
+	],
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "2125551234",
+			"use": "work",
+			"rank": 1,
+			"extension": []
+		},
+		{
+			"rank": 2,
+			"phantom": true,
+			"ramsoftId": "-13",
+			"system": "email",
+			"use": "direct",
+			"value": "directemail@abc.com",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+					"valueBoolean": true
+				}
+			]
+		},
+		{
+			"rank": 3,
+			"phantom": true,
+			"ramsoftId": "-14",
+			"system": "fax",
+			"use": "",
+			"value": "+1 212 555 3333",
+			"extension": []
+		},
+		{
+			"rank": 4,
+			"phantom": true,
+			"ramsoftId": "-18",
+			"system": "url",
+			"use": "",
+			"value": "https://ramsoft.com",
+			"extension": []
+		}
+	],
+	"address": [
+		{
+			"line": [
+				"299 Doon Valley Dr"
+			],
+			"city": "Kitchener",
+			"state": "ON",
+			"postalCode": "N2P 1K8",
+			"country": "CANADA"
+		}
+	],
+	"partOf": {
+		"id": "1",
+		"reference": "organization/1",
+		"display": "RAMSOFT"
+	},
+	"extension": [
+		{
+			"url": "http://www.ramsoft.com/fhir/extension/organization/isManaging",
+			"valueBoolean": false
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/distributeToFacilityOnly",
+			"valueBoolean": true
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/directAddress",
+			"valueString": "admin@newcrop.cert.direct-ci.com"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/preliminary",
+			"extension": [
+				{
+					"url": "text",
+					"valueString": "DIRECT"
+				},
+				{
+					"url": "text",
+					"valueString": "EMAIL"
+				},
+				{
+					"url": "text",
+					"valueString": "EXPORT"
+				}
+			]
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/image",
+			"extension": [
+				{
+					"url": "text",
+					"valueString": "CD"
+				},
+				{
+					"url": "text",
+					"valueString": "FILM"
+				}
+			]
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/final",
+			"extension": [
+				{
+					"url": "text",
+					"valueString": "DIRECT"
+				},
+				{
+					"url": "text",
+					"valueString": "EMAIL"
+				},
+				{
+					"url": "text",
+					"valueString": "EXPORT"
+				},
+				{
+					"url": "text",
+					"valueString": "FAX"
+				}
+			]
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/notes",
+			"valueString": "test notes"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/financialClass",
+			"valueCoding": {
+				"code": "SP",
+				"display": "SELF-PAY"
+			}
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/PayerID",
+			"valueString": "PayerID_123"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/eligibilityPayerID",
+			"valueString": "eligibilityPayerID_123"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/practiceType",
+			"extension": [
+				{
+					"url": "text",
+					"valueString": "Imaging"
+				},
+				{
+					"url": "text",
+					"valueString": "Reading"
+				},
+				{
+					"url": "text",
+					"valueString": "Transcription"
+				},
+				{
+					"url": "text",
+					"valueString": "Rx"
+				},
+				{
+					"url": "text",
+					"valueString": "Stana"
+				}
+			]
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/url",
+			"valueString": "fhir/organizaion/1"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/timezone",
+			"valueString": "Eastern Standard Time"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/mask",
+			"extension": [
+				{
+					"url": "http://www.ramsoft.com/fhir/StructureDefinition/fax",
+					"valueString": "^$|((\\\\(\\\\d{3}\\\\) ?)|(\\\\d{3}-))?\\\\d{3}-\\\\d{4}"
+				},
+				{
+					"url": "http://www.ramsoft.com/fhir/StructureDefinition/zipCode",
+					"valueString": "^$|^[ABCEGHJ-NPRSTVXY][0-9][ABCEGHJ-NPRSTV-Z] [0-9][ABCEGHJ-NPRSTV-Z][0-9]$"
+				},
+				{
+					"url": "http://www.ramsoft.com/fhir/StructureDefinition/ssn",
+					"valueString": "^$|^\\\\d{3}-\\\\d{2}-\\\\d{1}$"
+				},
+				{
+					"url": "http://www.ramsoft.com/fhir/StructureDefinition/phone",
+					"extension": [
+						{
+							"url": "http://www.ramsoft.com/fhir/StructureDefinition/home",
+							"valueString": "^$|((\\\\(\\\\d{3}\\\\) ?)|(\\\\d{3}-))?\\\\d{3}-\\\\d{4}"
+						},
+						{
+							"url": "http://www.ramsoft.com/fhir/StructureDefinition/bussiness",
+							"valueString": "$|((\\\\(\\\\d{3}\\\\) ?)|(\\\\d{3}-))?\\\\d{3}-\\\\d{4}"
+						},
+						{
+							"url": "http://www.ramsoft.com/fhir/StructureDefinition/cell",
+							"valueString": "$|((\\\\(\\\\d{3}\\\\) ?)|(\\\\d{3}-))?\\\\d{3}-\\\\d{4}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

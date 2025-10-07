@@ -1,0 +1,1 @@
+await page.screenshot({ path: './img/mo3.png', fullPage: true });

@@ -1,0 +1,74 @@
+{
+	"active": true,
+	"code": "7004 CT",
+	"description": "test 4",
+	"modality": {
+		"code": "CT",
+		"display": "CT"
+	},
+	"bodyPart": [
+		{
+			"code": "T-D4000",
+			"display": "Abdomen"
+		}
+	],
+	"laterality": {
+		"code": "B",
+		"display": "Bilateral"
+	},
+	"duration": "15",
+	"physicianRequired": true,
+	"studyType": "7004 CT",
+	"extension": [
+		{
+			"extension": [
+				{
+					"url": "text",
+					"valueCoding": {
+						"code": "T-D4000",
+						"display": "Abdomen"
+					}
+				}
+			],
+			"url": "http://hl7.org/fhir/us/core/StructureDefinition/bodyPart"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/laterality",
+			"valueCoding": {
+				"code": "B",
+				"display": "Bilateral"
+			}
+		},
+		{
+			"url": "managingOrganization",
+			"valueReference": {
+				"id": "2220409",
+				"reference": "Organization/2220409"
+			}
+		}
+	],
+	"procedureCode": [
+		{
+			"coding": [
+				{
+					"code": "7002 CT",
+					"display": "CT2 Description",
+					"extension": [
+						{
+							"url": "http://www.ramsoft.com/fhir/StructureDefinition/modifier",
+							"valueString": ""
+						},
+						{
+							"url": "http://www.ramsoft.com/fhir/StructureDefinition/quantity",
+							"valueInteger": 1
+						},
+						{
+							"url": "http://www.ramsoft.com/fhir/procedureCode/preAuth",
+							"valueBoolean": true
+						}
+					]
+				}
+			]
+		}
+	]
+}

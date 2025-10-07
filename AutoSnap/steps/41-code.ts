@@ -1,0 +1,1 @@
+await page.getByText('MAE GUSIKOWSKI').click({  force: true , timeout: 20000 });

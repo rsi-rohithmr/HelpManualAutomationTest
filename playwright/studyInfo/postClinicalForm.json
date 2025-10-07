@@ -1,0 +1,75 @@
+{
+  "resourceType": "BlumeForm",
+  "name": "Clinical Form 0123456789",
+  "description": "",
+  "organizationId": "3083279",
+  "organizationName": "AON MANAGING TEST ORG",
+  "version": "1.0.0",
+  "type": "clinic",
+  "status": "published",
+  "created": "2024-04-29T09:36:33.472Z",
+  "createdBy": {
+    "id": "633061",
+    "display": "USER02 RAMSOFTLOCAL"
+  },
+  "lastUpdated": "2024-11-29T09:40:34.76Z",
+  "eligibility": {
+    "procedureCode": [],
+    "modality": [
+      "PT/CT",
+      "CT"
+    ],
+    "role": [
+      "all"
+    ]
+  },
+  "template": true,
+  "internal": false,
+  "formTemplate": {
+    "header": {
+      "title": "",
+      "description": "",
+      "banner": null,
+      "colour": "#3A6DF1",
+      "bannerImageDimension": {},
+      "logoImage": null
+    },
+    "content": [
+      [
+        {
+          "id": "question-1",
+          "type": "multipleChoice",
+          "question": "Question A",
+          "required": true,
+          "key": "multipleChoice-0-0",
+          "description": "",
+          "multiselect": false,
+          "unique_id": "15a711ef-9e56-418a-9636-cdf712653727",
+          "shouldAutoOpen": true,
+          "options": [
+            {
+              "key": "162",
+              "description": "Option A",
+              "type": "multipleChoice"
+            },
+            {
+              "key": "167",
+              "description": "Option B",
+              "type": "multipleChoice"
+            },
+            {
+              "key": "other",
+              "customField": true,
+              "description": "Other",
+              "type": "multipleChoice"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "pdfFileName": null,
+  "patientId": null,
+  "id": "2cb07c95-4e46-4838-8483-bfabbc8fc244",
+  "lastModified": "2024-04-29T09:40:34"
+}

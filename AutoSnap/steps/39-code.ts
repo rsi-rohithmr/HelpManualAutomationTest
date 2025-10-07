@@ -1,0 +1,1 @@
+await page.locator('div').filter({ hasText: 'Linked Patient Records' }).screenshot({ path: './img/LPR1.png' });

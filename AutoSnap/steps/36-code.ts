@@ -1,0 +1,1 @@
+await page.locator('div').filter({ has: page.getByTestId('toolbar-amend') }).screenshot({ path: './img/RAI3.png' });

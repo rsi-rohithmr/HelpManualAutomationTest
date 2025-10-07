@@ -1,0 +1,1 @@
+await page.screenshot({ path: 'img_as/documentviewer_S.png' });

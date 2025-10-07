@@ -1,0 +1,373 @@
+{
+	"id": "bundle-transaction",
+	"resourceType": "Bundle",
+	"type": "transaction",
+	"entry": [
+	  {
+		"request": {
+		  "method": "POST",
+		  "url": "/Organization/"
+		},
+		"fullUrl": "urn:uuid2e1d446b-2f92-44d4-bd14-19ed03a52e1c",
+		"resource": {
+		  "active": true,
+		  "type": [
+			{
+			  "coding": [
+				{
+				  "code": "PROV",
+				  "display": "Healthcare Provider"
+				}
+			  ]
+			}
+		  ],
+		  "extension": [
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/taxId",
+			  "valueString": ""
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/timezone",
+			  "valueString": "Central Standard Time"
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/practiceType",
+			  "extension": [
+				{
+				  "url": "text",
+				  "valueString": "Referring"
+				}
+			  ]
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/linkedOrganization",
+			  "valueReference": {
+				"id": "20739",
+				"reference": "Organization/20739",
+				"display": "RAMSOFT INTERNAL"
+			  }
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/extension/organization/isManaging",
+			  "valueBoolean": true
+			}
+		  ],
+		  "telecom": [
+			{
+			  "system": "url",
+			  "value": "",
+			  "rank": 1,
+			  "id": "KDbsIOv0vh7s7TlL"
+			}
+		  ],
+		  "address": [
+			{
+			  "city": "Kitchener",
+			  "country": "Canada",
+			  "line": [
+				"100 Old Carriage Dr"
+			  ],
+			  "postalCode": "N2P 1Z3",
+			  "state": "ON",
+			  "latitude": 43.3920339,
+			  "longitude": -80.4308599
+			}
+		  ],
+		  "corporateWebsite": "",
+		  "practiceTypeArray": [
+			"Referring"
+		  ],
+		  "name": "REF ORG3 - RI",
+		  "update": true,
+		  "resourceType": "Organization"
+		}
+	  },
+	  {
+		"request": {
+		  "method": "PUT",
+		  "url": "/Organization/20739"
+		},
+		"fullUrl": "urn:uuid624a3b7d-db8a-4245-a566-cc2801a9dc43",
+		"resource": {
+		  "resourceType": "Organization",
+		  "id": "20739",
+		  "meta": {
+			"extension": [
+			  {
+				"url": "http://www.ramsoft.com/fhir/StructureDefinition/lastUpdateUser",
+				"valueReference": {
+				  "id": "11140",
+				  "reference": "Practitioner/11140",
+				  "display": "SYNTHETIC^TEST"
+				}
+			  }
+			],
+			"versionId": "273836504",
+			"lastUpdated": "2024-11-03T14:08:02+00:00"
+		  },
+		  "extension": [
+			{
+			  "url": "http://www.ramsoft.com/fhir/extension/inheritStudyStatus",
+			  "valueBoolean": false
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/extension/isQuickShare",
+			  "valueBoolean": true
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/taxId",
+			  "valueString": "SYNTHETICTEST-ORG_"
+			},
+			{
+			  "extension": [
+				{
+				  "url": "enablePublicBooking",
+				  "valueBoolean": true
+				}
+			  ],
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/preference"
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/distributeToFacilityOnly",
+			  "valueBoolean": false
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/distributeToParentOrganization",
+			  "valueBoolean": false
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/distributeToPractitioner",
+			  "valueBoolean": false
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/inheritFromParentOrganization",
+			  "valueBoolean": false
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/inheritStudyTypeFromParentOrganization",
+			  "valueBoolean": false
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/extension/organization/workflowScript",
+			  "valueString": "(function(operationJson, imagingStudyJson, patientJson, encounterJson, serviceRequestJson, organizationJson, practitionerJson) {\\n\\n})"
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/extension/organization/DomainName",
+			  "valueString": "ramsoft.com"
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/extension/organization/longitude",
+			  "valueString": "-73.9418603"
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/extension/organization/latitude",
+			  "valueString": "40.7047738"
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/url",
+			  "valueString": "Organization/20739"
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/extension/organization/TilledAccountId",
+			  "valueString": ""
+			},
+			{
+			  "extension": [
+				{
+				  "url": "text",
+				  "valueString": "Managing"
+				},
+				{
+				  "url": "text",
+				  "valueString": "Imaging"
+				}
+			  ],
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/practiceType"
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/timezone",
+			  "valueString": "Central Standard Time"
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/timezoneIANA",
+			  "valueString": "America/Chicago"
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/defaultIssuer",
+			  "valueReference": {
+				"id": "10258",
+				"reference": "AssigningAuthority/10258",
+				"display": "RAMSOFT INTERNAL"
+			  }
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/isExternalIssuer",
+			  "valueBoolean": false
+			},
+			{
+			  "extension": [
+				{
+				  "url": "detailed",
+				  "valueReference": {
+					"id": "10258",
+					"extension": [
+					  {
+						"url": "http://www.ramsoft.com/fhir/StructureDefinition/isExternalIssuer",
+						"valueBoolean": false
+					  }
+					],
+					"reference": "AssigningAuthority/10258",
+					"display": "RAMSOFT INTERNAL"
+				  }
+				}
+			  ],
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/issuers"
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/defaultRole",
+			  "valueReference": {
+				"id": "11392",
+				"reference": "Role/11392",
+				"display": "ADMINISTRATOR"
+			  }
+			},
+			{
+			  "extension": [
+				{
+				  "url": "detail",
+				  "valueReference": {
+					"id": "2255556",
+					"reference": "Organization/2255556",
+					"display": "DANNI ORG 06193"
+				  }
+				},
+				{
+				  "url": "detail",
+				  "valueReference": {
+					"id": "2623163",
+					"reference": "Organization/2623163",
+					"display": "EMD ECHO ATTENDINGS"
+				  }
+				},
+				{
+				  "url": "detail",
+				  "valueReference": {
+					"id": "2868655",
+					"reference": "Organization/2868655",
+					"display": "AFTESTREF"
+				  }
+				},
+				{
+				  "url": "detail",
+				  "valueReference": {
+					"id": "3093552",
+					"reference": "Organization/3093552",
+					"display": "@MG IMAGING CENTER"
+				  }
+				},
+				{
+				  "url": "detail",
+				  "valueReference": {
+					"id": "3231139",
+					"reference": "Organization/3231139",
+					"display": "REF ORG1 - RI"
+				  }
+				},
+				{
+				  "url": "detail",
+				  "valueReference": {
+					"id": "3231173",
+					"reference": "Organization/3231173",
+					"display": "REF ORG2 - RI"
+				  }
+				},
+				{
+				  "url": "detail",
+				  "valueReference": {
+					"reference": "urn:uuid2e1d446b-2f92-44d4-bd14-19ed03a52e1c",
+					"display": "REF ORG3 - RI"
+				  }
+				}
+			  ],
+			  "url": "http://www.ramsoft.com/fhir/StructureDefinition/linkedOrganization"
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/extension/organization/isManaging",
+			  "valueBoolean": true
+			},
+			{
+			  "url": "http://www.ramsoft.com/fhir/extension/organization/clientID",
+			  "valueString": "145948A"
+			}
+		  ],
+		  "identifier": [
+			{
+			  "type": {
+				"coding": [
+				  {
+					"code": "NPI",
+					"display": "NPI"
+				  }
+				]
+			  },
+			  "value": "1478523690"
+			},
+			{
+			  "type": {
+				"coding": [
+				  {
+					"code": "NPI",
+					"display": "NPI"
+				  }
+				]
+			  },
+			  "value": "1478523690"
+			}
+		  ],
+		  "active": true,
+		  "type": [
+			{
+			  "coding": [
+				{
+				  "code": "PROV",
+				  "display": "Healthcare Provider"
+				}
+			  ]
+			}
+		  ],
+		  "name": "RAMSOFT INTERNAL",
+		  "telecom": [
+			{
+			  "id": "WEKVjj6pfW73lwpj",
+			  "system": "fax",
+			  "value": "+3333333333",
+			  "rank": 4
+			},
+			{
+			  "id": "1hT6SrgpkEefwrCN",
+			  "system": "phone",
+			  "value": "+3333333333",
+			  "rank": 3
+			},
+			{
+			  "id": "N4Np8j346GJwfpSl",
+			  "system": "email",
+			  "value": "test1@ramsoft.com",
+			  "rank": 2
+			}
+		  ],
+		  "address": [
+			{
+			  "line": [
+				"1200 BROOKLYN AVE"
+			  ],
+			  "city": "SAN ANTONIO",
+			  "state": "TX",
+			  "postalCode": "78212-4803",
+			  "country": "UNITED STATES"
+			}
+		  ]
+		}
+	  }
+	]
+  }

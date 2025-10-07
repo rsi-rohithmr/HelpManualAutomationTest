@@ -1,0 +1,198 @@
+{
+	"resourceType": "Organization",
+	"id": "${__property(OrgID)}",
+	"meta": {
+		"extension": [
+			{
+				"url": "http://www.ramsoft.com/fhir/StructureDefinition/lastUpdateUser",
+				"valueReference": {
+					"id": "633061",
+					"reference": "Practitioner/633061",
+					"display": "USER02 RAMSOFTLOCAL"
+				}
+			}
+		],
+		"versionId": "168765393",
+		"lastUpdated": "2024-12-10T16:43:49+00:00"
+	},
+	"extension": [
+		{
+			"url": "http://www.ramsoft.com/fhir/extension/inheritStudyStatus",
+			"valueBoolean": false
+		},
+		{
+			"extension": [
+				{
+					"url": "enablePublicBooking",
+					"valueBoolean": true
+				}
+			],
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/preference"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/distributeToFacilityOnly",
+			"valueBoolean": false
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/distributeToParentOrganization",
+			"valueBoolean": false
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/distributeToPractitioner",
+			"valueBoolean": false
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/inheritFromParentOrganization",
+			"valueBoolean": false
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/inheritStudyTypeFromParentOrganization",
+			"valueBoolean": false
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/extension/organization/longitude",
+			"valueString": "-74.0431435"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/extension/organization/latitude",
+			"valueString": "40.7177545"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/url",
+			"valueString": "Organization/${__property(OrgID)}"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/extension/organization/TilledAccountId",
+			"valueString": ""
+		},
+		{
+			"extension": [
+				{
+					"url": "text",
+					"valueString": "Managing"
+				},
+				{
+					"url": "text",
+					"valueString": "Imaging"
+				}
+			],
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/practiceType"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/timezone",
+			"valueString": "Eastern Standard Time"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/timezoneIANA",
+			"valueString": "America/New_York"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/defaultIssuer",
+			"valueReference": {
+				"id": "${__property(AAID)}",
+				"reference": "AssigningAuthority/${__property(AAID)}",
+				"display": "${__property(AAName)}"
+			}
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/isExternalIssuer",
+			"valueBoolean": false
+		},
+		{
+			"extension": [
+				{
+					"url": "detailed",
+					"valueReference": {
+						"id": "${__property(AAID)}",
+						"extension": [
+							{
+								"url": "http://www.ramsoft.com/fhir/StructureDefinition/isExternalIssuer",
+								"valueBoolean": false
+							}
+						],
+						"reference": "AssigningAuthority/${__property(AAID)}",
+						"display": "${__property(AAName)}"
+					}
+				}
+			],
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/issuers"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/extension/organization/isManaging",
+			"valueBoolean": true
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/extension/organization/clientID",
+			"valueString": "${__property(ClientID)}"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/taxId",
+			"valueString": ""
+		}
+	],
+	"identifier": [
+		{
+			"type": {
+				"coding": [
+					{
+						"code": "NPI",
+						"display": "NPI"
+					}
+				]
+			},
+			"value": "6380536199"
+		},
+		{
+			"type": {
+				"coding": [
+					{
+						"code": "NPI",
+						"display": "NPI"
+					}
+				]
+			},
+			"value": "6380536199"
+		}
+	],
+	"active": true,
+	"type": [
+		{
+			"coding": [
+				{
+					"code": "PROV",
+					"display": "Healthcare Provider"
+				}
+			]
+		}
+	],
+	"name": "${OrgName}",
+	"telecom": [
+		{
+			"id": "daRanh1F2E3I2Nk2",
+			"system": "email",
+			"value": "htruong2.hvn@gmail.com",
+			"rank": 3
+		},
+		{
+			"id": "XFgnsp2lyg9T3Jfh",
+			"system": "phone",
+			"value": "+905896655",
+			"rank": 2
+		}
+	],
+	"address": [
+		{
+			"line": [
+				"Jersey City Blvd"
+			],
+			"city": "Jersey City Boulevard",
+			"state": "NJ",
+			"postalCode": "07305",
+			"country": "UNITED STATES"
+		}
+	],
+	"practiceTypeArray": [
+		"Managing",
+		"Imaging"
+	]
+}

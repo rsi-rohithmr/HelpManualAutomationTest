@@ -1,0 +1,1 @@
+await page.getByTestId('patient-card-title').getByTestId('PersonIcon').click({ force: true, timeout: 20000 });

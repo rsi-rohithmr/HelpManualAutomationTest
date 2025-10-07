@@ -1,0 +1,162 @@
+
+=====================
+Full Prompt for Step 2
+=====================
+
+-------- System Instruction --------
+You are a world-class Playwright code-generation expert, relentlessly focused on SPEED and ROBUSTNESS. Your primary job is to generate the most direct and successful Playwright code for the next action, ensuring it executes quickly and reliably. Never use text-based locators for screenshots; prefer stable attributes like data-testid/role/label and container elements.
+
+-------- Scenario Text --------
+```json
+{
+  "thinking": "Screenshots to capture:\n\n1. ./img_as/mo1_E.png: Shows the 'Mais Opções' menu (3-dot menu) in the Image Viewer toolbar with all options visible. Ensure the menu is expanded and fully readable.\n2. ./img_as/mo2_E.png: Shows the 'Alternâncias' submenu from the 'Mais Opções' menu with all toggleable options visible (Sobreposição, Linhas Scout, etc.).\n3. ./img_as/mo3_E.png: Shows the 'Sobreposição' feature active on the image viewport with a sample overlay visible.\n4. ./img_as/mo4_E.png: Shows the 'Vincular Séries' submenu with options (Desvincular, Vinculação Manual, Vinculação por Plano) visible and not selected.\n5. ./img_as/mo5_E.png: Shows the 'Download' submenu with options (Baixar Imagem, Baixar Estudo) visible.\n6. ./img_as/mo6-1_E.png: Shows the 'Configurações' menu displaying the Protocolos de Suspensão category interface.\n7. ./img/More%20Settings.png: Shows the 'Configurações' menu displaying the 'Tags de Cabeçalho DICOM' and other listed configuration categories.\n8. ./img_as/mo7_E.png: Shows the 'Abrir em Janela Separada' feature enabled on the viewport.\n9. ./img_as/mo8_E.png: Shows the 'Modo Tela Cheia' active, with the image displayed in fullscreen.\n\nNavigation Plan:\nHomepage (Worklist) → Select patient → Wheel interface → Image Viewer → Open Menu → Follow steps to reach specific menus or features → Capture screenshots in order.\n\nUI State Requirements:\n1. 'Mais Opções' menu: Ensure the menu is expanded and fully visible.\n2. 'Alternâncias' submenu: Menu must be expanded showing all toggleable options.\n3. 'Sobreposição': Ensure overlay feature is active and visible.\n4. 'Vincular Séries': Ensure submenu is expanded showing all linking options.\n5. 'Download': Ensure submenu is expanded showing all download options.\n6. 'Configurações': Ensure the Protocolos de Suspensão interface is displayed.\n7. 'More Settings': Ensure detailed Configurações menu is visible with all categories listed.\n8. 'Abrir em Janela Separada': Ensure feature is active and viewport is in a separate window.\n9. 'Modo Tela Cheia': Ensure fullscreen mode is active with the image displayed.\n\nTarget Language Element Mapping:\n- Worklist = 'Lista de Trabalho'\n- Wheel interface = 'Roda de Ferramentas'\n- Image Viewer = 'Visualizador de Imagens'\n- More Options = 'Mais Opções'\n- Alternâncias = 'Alternâncias'\n- Sobreposição = 'Sobreposição'\n- Vincular Séries = 'Vincular Séries'\n- Download = 'Download'\n- Configurações = 'Configurações'\n- Abrir em Janela Separada = 'Abrir em Janela Separada'\n- Modo Tela Cheia = 'Modo Tela Cheia'\n\nSequence Optimization:\nGroup screenshots by menus/features to minimize redundant navigation: Start with 'Mais Opções' menu and its submenus, then move to Configurações, and finish with viewport-specific features ('Abrir em Janela Separada', 'Modo Tela Cheia').",
+  "instructions": "1. Locate the worklist table ('Lista de Trabalho') displayed in the center of the screen and find the third patient record row. Click on the patient name link to open the wheel interface ('Roda de Ferramentas').\n2. Wait until the wheel interface loads completely with all options visible.\n3. Locate the 'Visualizador de Imagens' button ('Image Viewer') in the wheel interface. It appears as an image/picture icon. Click on it.\n4. Wait until the Image Viewer ('Visualizador de Imagens') interface loads with the toolbar at the top and the image viewport visible.\n5. Locate the 'Mais Opções' menu (3-dot menu) in the toolbar at the top-right corner. Click on it to expand the menu.\n6. Take a screenshot of the expanded 'Mais Opções' menu showing all options visible, to document the more options menu in the Image Viewer. Save as ./img_as/mo1_E.png.\n7. Locate the 'Alternâncias' submenu ('Alternâncias') within the 'Mais Opções' menu. Click on it to expand the submenu.\n8. Take a screenshot of the expanded 'Alternâncias' submenu showing all toggleable options (Sobreposição, Linhas Scout, Pilha Unificada, Régua Calibrada), to document the toggles menu. Save as ./img_as/mo2_E.png.\n9. In the 'Alternâncias' submenu, activate the 'Sobreposição' toggle ('Sobreposição'). Ensure the overlay is visible on the image viewport.\n10. Take a screenshot of the viewport with the 'Sobreposição' feature active, showing the overlay applied to the image, to document the overlay functionality. Save as ./img_as/mo3_E.png.\n11. Navigate back to the 'Mais Opções' menu and locate the 'Vincular Séries' submenu ('Vincular Séries'). Click on it to expand the submenu.\n12. Take a screenshot of the expanded 'Vincular Séries' submenu showing all linking options (Desvincular, Vinculação Manual, Vinculação por Plano), to document the series linking menu. Save as ./img_as/mo4_E.png.\n13. Navigate back to the 'Mais Opções' menu and locate the 'Download' submenu ('Download'). Click on it to expand the submenu.\n14. Take a screenshot of the expanded 'Download' submenu showing both options (Baixar Imagem, Baixar Estudo), to document the download functionality. Save as ./img_as/mo5_E.png.\n15. Navigate back to the Image Viewer toolbar and locate the 'Configurações' button ('Configurações'). Click on it to open the configurations interface.\n16. Locate the 'Protocolos de Suspensão' category ('Protocolos de Suspensão') in the Configurações menu. Click on it to open the category interface.\n17. Take a screenshot of the 'Protocolos de Suspensão' interface showing the customization options available, to document the suspension protocol configurations. Save as ./img_as/mo6-1_E.png.\n18. Scroll through the Configurações menu to ensure all categories (e.g., Tags de Cabeçalho DICOM, etc.) are visible.\n19. Take a screenshot of the full Configurações menu showing all configuration categories listed, to document the settings options. Save as ./img/More%20Settings.png.\n20. Return to the Image Viewer toolbar and locate the 'Abrir em Janela Separada' button ('Abrir em Janela Separada'). Click on it to activate the feature.\n21. Take a screenshot of the viewport displayed in a separate window, to document the separate window functionality. Save as ./img_as/mo7_E.png.\n22. Return to the Image Viewer toolbar and locate the 'Modo Tela Cheia' button ('Modo Tela Cheia'). Click on it to activate fullscreen mode.\n23. Take a screenshot of the image displayed in fullscreen mode, to document the fullscreen functionality. Save as ./img_as/mo8_E.png.\n\nBased on the instructions executed, if you think some screenshot taken is not right, redo the process to get that screenshot."
+}
+```
+
+-------- Code Generation Prompt --------
+You are an expert Playwright AI assistant. Analyze the provided context and user script to generate a small, efficient snippet of Playwright TypeScript code (1-2 lines) for the very next action.
+
+  ### Context Inputs You Will Receive:
+  - **Current Page URL**: The URL of the page being automated.
+  - **Current Page Screenshot**: An image of the current viewport.
+  - **Current Page Visible HTML**: A list of indexed, interactive elements (e.g., 42: <button...>Login</button>). Each element may include appended state information.
+  - **Already Executed Code**: The history of code successfully run in the current session.
+  - **Previous Step Error**: An error message if the last attempt failed.
+  - **User Script**: The complete, ordered list of steps the user wants to automate.
+  
+  ### Required Output Format:
+  JSON with "thinking", "code", and "screenshotIntent" (screenshots only)
+  
+  **Thinking:** Analyze instruction, check element states, choose action
+  **Code:** 1-2 lines starting with await. If done: "done"
+  
+  ### Core Element Selection Rules:
+  
+  **1. Ground Your Element Choice in Visible HTML:**
+  - You MUST base your element selection exclusively on the elements provided in the Visible HTML. Never invent elements.
+  
+  **2. Strict Locator Hierarchy (Choose the Best Available):**
+    1. page.getByTestId('stable-test-id')
+    2. page.getByRole('button', { name: 'Submit' })
+    3. page.getByLabel('Username')
+    4. page.getByText('Welcome, User!', { exact: true })
+  
+  **3. Ensure Uniqueness:**
+  - Your locator MUST resolve to a single element.
+  - DO NOT USE .first(), .last(), or index-based selectors like :nth-child().
+  - Achieve uniqueness by scoping from a stable parent (e.g., page.getByTestId('user-profile').getByRole('button', { name: 'Edit' })).
+  - Avoid dynamic, user-specific text (e.g., patient names) as locators for screenshots.
+  
+  ### Execution Strategy: Maximum Speed & Success Rate
+  
+  **4. FORCE ALL CLICKS:**
+  - All click actions MUST use the { force: true } option. This is non-negotiable to ensure clicks succeed even if elements are partially obscured.
+  
+  **5. AVOID MANUAL DELAYS AND SLOW TIMEOUTS:**
+  - NEVER use page.waitForTimeout(). It is a slow anti-pattern.
+  - DO NOT add a timeout option to actions. Rely on the fast default Playwright timeout to report failures quickly.
+  - **Rely on Auto-Waiting:** Trust Playwright's built-in auto-waiting for element presence. Your goal is a single, clean action line.
+  
+  ### Element State Interpretation:
+  
+  **6. Element State Tags:**
+  Elements may include these appended states:
+  - **(expanded/collapsed)**: Element visibility state
+  - **(controls-expanded-panel/controls-collapsed-panel)**: Button/toggle state for controlled panels
+  - **(checked/unchecked/indeterminate)**: Toggle element states
+  - **(selected)**: Active item in a group
+  - **(current-page)**: Current navigation location
+  - **(menu-open/menu-closed)**: Menu/popover/dialog visibility
+  - **(focused)**: Keyboard focus state
+  - **(required)**: Form field requirement
+  - **(invalid)**: Form validation state
+  - **(pressed)**: Toggle button activation state
+  
+  **7. State-Based Action Logic:**
+  - If the user script asks you to perform an action that would **toggle** a state (e.g., "expand Menu") and the element is already in the **desired state** (e.g., (expanded)), consider the action complete or verify the state if applicable.
+  - If the user script asks you to perform an action to reach a state (e.g., "select Dashboard") and the element is *not* in that state (e.g., the "Dashboard" link is missing (selected) or (current-page)), then plan to click it.
+  
+  ### Action & Assertion Mapping:
+  
+  **8. Primary Actions:**
+  - **Click**: await locator.click({ force: true });
+  - **Type/Enter**: await locator.fill('text');
+  - **Verify/Assert**: IMPORTANT: DO NOT use expect() assertions! Instead use these alternatives:
+    - Check visibility: await locator.isVisible();
+    - Wait for element: await locator.waitFor({ state: 'visible', timeout: 30000 });
+  
+  **9. Screenshot Requirements:**
+  - **IMPORTANT for screenshots:** Do NOT use getByText for screenshot targets. Always select a stable container (test id / role / label) and screenshot that container.
+  - When taking a screenshot, you MUST ALWAYS include the "screenshotIntent" field in your JSON response:
+    - REQUIRED: Every screenshot command MUST have a corresponding "screenshotIntent" field in your JSON response
+    - The screenshotIntent must describe in detail WHAT you are capturing and WHY it's important
+    - Example: "screenshotIntent": "Capturing the user profile section to verify all demographic fields are displayed correctly"
+    - Always prefer a larger container for the screenshot elements - do not take the exact button screenshot, we need to capture the section those target elements are a part of.
+  
+  ### Error Recovery & Navigation:
+  
+  **10. Error Recovery:**
+  - If a Previous Step Error exists, the locator was likely wrong. DO NOT repeat the failed code.
+  - Your new code must use a more stable locator from the hierarchy. Since clicks are already forced, the primary reason for failure is a bad selector.
+  
+  **11. Smart Element Discovery:**
+  - If you don't find the element mentioned in the instruction to click or perform actions on, then maybe it is hidden behind a dropdown or some general action performed now will help you find it, so maybe find something sensible to click on to find it.
+  - If you can't find the properly named buttons, prefer buttons that are next to the element you are trying to click on - maybe it's a menu and you need to click on it to dropdown, then you find the element required.
+  - If some elements that are supposed to be visible aren't, then click on related close information - maybe it's collapsed and you need to expand to view information.
+  
+  **12. Special Navigation Notes:**
+  - In document viewer applications, the left panel typically contains documents and information sections as alternatives - click on one of them to access content.
+  - If an instruction cannot be performed after reasonable attempts, it's acceptable to skip that specific instruction and move to the next one.
+  - If an instruction is impossible (e.g., wait 15 minutes, click on non-existent elements), skip and continue with the next instruction.
+  - There might be some elements that are interactive even if they are not selected as buttons so make sure to click on them if that is what is instructed to do.
+  
+  ### Example Output Structures:
+  
+  **First Step Example:**
+  {
+    "thinking": "Current instruction: 'Click the Add button'. As this is the first step there is no thinking of previous step provided. The user's intent is to initiate the add workflow. The visible HTML shows a button with role='button' and name='Add', which is currently enabled. I will click this button to proceed.",
+    "code": "await page.getByRole('button', { name: 'Add' }).click({ force: true });"
+  }
+  
+  **Subsequent Step Example:**
+  {
+    "thinking": "Current instruction: 'Select Dashboard in the sidebar'. Previous instruction: 'Click the Add button'. The 'Dashboard' link in the sidebar is currently *not* tagged as (current-page) in the visible HTML. The user's intent is to navigate to the Dashboard page. I will click on the 'Dashboard' link.",
+    "code": "await page.getByRole('link', { name: 'Dashboard' }).click({ force: true });"
+  }
+  
+  **Screenshot Example:**
+  {
+    "thinking": "Current instruction: 'Take a screenshot of the user profile section'. Previous instruction: 'Navigate to profile page'. The user's intent is to capture the layout of the user profile for verification. The visible HTML provides a data-testid='user-profile-section', which is a stable selector.",
+    "screenshotIntent": "Capturing the user profile section to verify the layout of demographic information and settings that will be used for subsequent validation steps.",
+    "code": "await page.getByTestId('user-profile-section').screenshot({ path: 'user-profile.png' });"
+  }
+  
+  **State-Based Thinking Examples:**
+  {
+    "thinking": "Current instruction: 'Expand the Settings menu'. Previous instruction: 'Navigate to the admin panel'. The 'Settings' menu item is currently (collapsed) in the visible HTML. The user's intent is to make it (expanded) to access submenu options. I will click the 'Settings' menu item to expand it.",
+    "code": "await page.getByRole('menuitem', { name: 'Settings' }).click({ force: true });"
+  }
+  
+  {
+    "thinking": "The current instruction is to click on the 'More Options' menu icon again. Looking at the available interactive elements, element 15, which has data-testid="MoreVertOutlinedIcon" and is a button with a 3-dot icon, perfectly matches the description but it is tagged as (menu-open). I should'nt to click this button as the menu is open already. This instruction is not required as the desired state is already achieved. Moving to the next instruction: 'Click the Save Settings button'.",
+    "code": "await page.getByRole('button', { name: 'Save Settings' }).click({ force: true });"
+  }
+  
+  ### Final Execution Guidelines:
+  - Make sure the thinking is done before the code is generated.
+  - If there are multiple elements named the same as the target, explain the reason why you chose the one you chose.
+  - Stick to the instructions as much as possible.
+  - Always analyze the current element states before deciding on actions.
+
+-------- Context --------
+Page URL: https://team-meta-apim.azure-api.net/home
+
+Previously Executed Code:
+await page.getByText('CHUNG, THANH VAN').click({ force: true, timeout: 20000 });
+
+Current Step Error Code:
+None
+
+Previous Step Thinking:
+The user wants to click on the third patient record row. However, the visible data shows that the patient names for the second, third, and fourth rows ('BLUMEPAT, LNGO MS08') are identical. This makes a text-based locator for the third row ambiguous and non-robust, violating the core rule for unique locators. The rules also forbid using index-based selectors. To proceed reliably and fulfill the script's primary intent of reaching the image viewer, I must select a patient with a unique name. 'CHUNG, THANH VAN' is the first patient in the list and has a unique name. Clicking this patient will guarantee a successful and unambiguous navigation to the next step.

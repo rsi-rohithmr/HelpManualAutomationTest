@@ -1,0 +1,168 @@
+{
+	"active": true,
+	"address": [
+		{
+			"country": "Canada",
+			"state": "ON",
+			"postalCode": "N2P 1B3",
+			"city": "Kitchener",
+			"line": [
+				"299 Doon Valley Dr",
+				null
+			],
+			"latitude": 43.3918092,
+			"longitude": -80.40757049999999
+		}
+	],
+	"name": "PAYER000",
+	"type": [
+		{
+			"coding": [
+				{
+					"code": "PAY",
+					"display": "Payer"
+				}
+			]
+		}
+	],
+	"extension": [
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/PayerSource"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/payerID",
+			"valueString": "PAYERID000"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/eligibilityPayerID",
+			"valueString": ""
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/carrieId"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/payerType",
+			"valueReference": {
+				"id": "233280",
+				"display": "Insurance"
+			}
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/contactName"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/financialType",
+			"valueReference": {
+				"id": "6511860",
+				"display": "FT 127749",
+				"reference": "FinancialType/6511860"
+			}
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/isDefault"
+		}
+	],
+	"telecom": [
+		{
+			"system": "fax",
+			"use": "work",
+			"value": "",
+			"extension": [
+				{
+					"url": "http://www.ramsoft.com/fhir/StructureDefinition/telecomPurpose",
+					"valueString": "authorizationFax"
+				}
+			]
+		},
+		{
+			"system": "phone",
+			"use": "work",
+			"value": "",
+			"extension": [
+				{
+					"url": "http://www.ramsoft.com/fhir/StructureDefinition/telecomPurpose",
+					"valueString": "authorizationPhone"
+				}
+			]
+		},
+		{
+			"system": "phone",
+			"use": "work",
+			"extension": [
+				{
+					"url": "http://www.ramsoft.com/fhir/StructureDefinition/telecomPurpose",
+					"valueString": "benefitPhone"
+				}
+			]
+		},
+		{
+			"system": "phone",
+			"use": "work",
+			"value": "",
+			"extension": [
+				{
+					"url": "http://www.ramsoft.com/fhir/StructureDefinition/telecomPurpose",
+					"valueString": "businessPhone"
+				}
+			]
+		},
+		{
+			"system": "fax",
+			"use": "work",
+			"extension": [
+				{
+					"url": "http://www.ramsoft.com/fhir/StructureDefinition/telecomPurpose",
+					"valueString": "claimFax"
+				}
+			]
+		},
+		{
+			"system": "phone",
+			"use": "work",
+			"extension": [
+				{
+					"url": "http://www.ramsoft.com/fhir/StructureDefinition/telecomPurpose",
+					"valueString": "claimPhone"
+				}
+			]
+		},
+		{
+			"system": "email",
+			"use": "work",
+			"value": "",
+			"extension": [
+				{
+					"url": "http://www.ramsoft.com/fhir/StructureDefinition/telecomPurpose",
+					"valueString": "email"
+				}
+			]
+		},
+		{
+			"system": "fax",
+			"use": "work",
+			"value": "",
+			"extension": [
+				{
+					"url": "http://www.ramsoft.com/fhir/StructureDefinition/telecomPurpose",
+					"valueString": "fax"
+				}
+			]
+		},
+		{
+			"system": "url",
+			"use": "work",
+			"value": "",
+			"extension": [
+				{
+					"url": "http://www.ramsoft.com/fhir/StructureDefinition/telecomPurpose",
+					"valueString": "website"
+				}
+			]
+		}
+	],
+	"partOf": {
+		"id": "9011914",
+		"reference": "Organization/9011914",
+		"display": "DEFAULT MANAGING ORG121314"
+	}
+}

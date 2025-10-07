@@ -1,0 +1,1 @@
+await page.getByTestId('imageviewer-icon').click({ force: true, timeout: 20000 });

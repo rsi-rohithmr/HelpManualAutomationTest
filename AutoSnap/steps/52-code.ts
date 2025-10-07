@@ -1,0 +1,1 @@
+await page.locator('div').filter({ has: page.getByText('Patient Documents') }).screenshot({ path: './img/LPR1.png' });

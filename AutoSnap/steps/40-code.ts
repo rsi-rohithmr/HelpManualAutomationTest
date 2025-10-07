@@ -1,0 +1,1 @@
+await page.getByTestId('icon-button').click({  force: true , timeout: 20000 });

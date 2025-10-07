@@ -1,0 +1,1 @@
+await page.getByTestId('study-icon').waitFor({ state: 'visible' });

@@ -1,0 +1,1 @@
+await page.getByText('BLUMEPAT, LNGO MS08').nth(1).click({ force: true, timeout: 20000 });

@@ -1,0 +1,1 @@
+await page.getByText('CHUNG, THANH VAN').click({  force: true , timeout: 20000 });

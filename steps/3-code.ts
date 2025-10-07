@@ -1,0 +1,1 @@
+await page.locator('[data-testid="patient-profile-box"]:has-text("BLUMEPAT, LNGO MS08")').click({ force: true, timeout: 20000 });

@@ -1,0 +1,789 @@
+{
+  "id": "bundle-transaction",
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "POST",
+        "url": "/Patient/"
+      },
+      "fullUrl": "urn:uuidd1e60aa1-e6e8-4566-859b-f7857e4e1d50",
+      "resource": {
+        "id": "-1",
+        "resourceType": "Patient",
+        "active": true,
+        "value": "",
+        "financialClass": "",
+        "employerId": "",
+        "employerDisplay": "",
+        "employmentStatusCodingCode": "",
+        "employmentStatusCodingDisplay": "",
+        "fullUrl": "urn:uuidd1e60aa1-e6e8-4566-859b-f7857e4e1d50",
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/ValueSet/identifier-type",
+                  "code": "MR"
+                }
+              ]
+            },
+            "system": "urn:oid:1.2.36.146.595.217.0.1",
+            "value": "",
+            "period": {
+              "start": "2022-01-28"
+            },
+            "assigner": {
+              "display": ""
+            }
+          },
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/ValueSet/identifier-type",
+                  "code": "SS"
+                }
+              ]
+            },
+            "system": "urn:oid:1.2.36.146.595.217.0.1",
+            "value": "419520000",
+            "period": {
+              "start": "2022-01-28"
+            },
+            "assigner": {
+              "display": ""
+            }
+          },
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/ValueSet/identifier-type",
+                  "code": "DL"
+                }
+              ]
+            },
+            "system": "urn:oid:1.2.36.146.595.217.0.1",
+            "value": "DL2052789",
+            "period": {
+              "start": "2022-01-28"
+            },
+            "assigner": {
+              "display": ""
+            }
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "code": "2028-9",
+                  "display": "ASIAN"
+                }
+              },
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "system": "http://hl7.org/fhir/v3/NullFlavor",
+                  "code": "UNK",
+                  "display": "DECLINED"
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/employmentstatus",
+            "valueCoding": {
+              "code": "1",
+              "display": "FULL-TIME"
+            }
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/customfield1",
+            "valueString": "Patient Custom field 1"
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/customfield2",
+            "valueString": "Patient Custom field 2"
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/custommemo1",
+            "valueString": "Patient memo 1"
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueHumanName": {
+              "text": "Patient Mother",
+              "family": "",
+              "givenText": "",
+              "prefixText": "",
+              "suffixText": ""
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+            "valueCode": "OTHER"
+          },
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2148-5",
+                  "display": "Mexican"
+                }
+              },
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2140-2",
+                  "display": "Castillian"
+                }
+              }
+            ]
+          }
+        ],
+        "gender": "FEMALE",
+        "name": [
+          {
+            "text": "LAUREN HERZOG",
+            "family": "",
+            "givenText": "",
+            "prefixText": "",
+            "suffixText": ""
+          }
+        ],
+        "address": [
+          {
+            "city": "Kitchener",
+            "state": "ON",
+            "postalCode": "N2P0C7",
+            "country": "CANADA",
+            "line": [
+              "201 Old Carriage drive"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "extension": [
+              {
+                "url": "TelecomId",
+                "valueString": "043bb854-c117-47e6-9750-df034e1b1349"
+              }
+            ],
+            "system": "email",
+            "value": "dominique.harber32@hotmail.com",
+            "rank": 1
+          },
+          {
+            "extension": [
+              {
+                "url": "TelecomId",
+                "valueString": "8c80a2be-10d6-40ac-9848-fa8d66959fe7"
+              }
+            ],
+            "system": "phone",
+            "value": "+12268680221",
+            "rank": 2
+          },
+          {
+            "extension": [
+              {
+                "url": "TelecomId",
+                "valueString": "0a407d75-8686-4bb0-affa-b063fce0745a"
+              }
+            ],
+            "system": "fax",
+            "value": "+1 226 868 4321",
+            "rank": 3
+          }
+        ],
+        "birthDate": "2024-03-23",
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "",
+              "code": "M",
+              "display": "MARRIED"
+            }
+          ]
+        },
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "2268684567"
+              },
+              {
+                "system": "email",
+                "value": "hatranec@abc.com"
+              }
+            ],
+            "name": {
+              "text": "Patient Brother "
+            },
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                    "code": "BRO"
+                  }
+                ],
+                "text": "BROTHER"
+              }
+            ]
+          }
+        ],
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "code": "13295",
+                  "display": "ABKHAZIAN"
+                },
+                {
+                  "code": "13296",
+                  "display": "ACHINESE"
+                }
+              ]
+            },
+            "preffered": true
+          }
+        ],
+        "managingOrganization": {
+          "id": "5307797",
+          "reference": "organization/5307797",
+          "display": "TEST MANAGING ORG 01"
+        },
+        "employer": {
+          "id": "",
+          "display": ""
+        },
+        "employmentStatus": {
+          "code": "2",
+          "display": ""
+        },
+        "meta": {
+          "extension": []
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "/Organization/"
+      },
+      "fullUrl": "urn:uuid1194afcf-8471-4bea-8313-2955e369a57c",
+      "resource": {
+        "id": "-1",
+        "resourceType": "Organization",
+        "active": true,
+        "name": "PAYER2052789",
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "code": "NIIP"
+                }
+              ]
+            },
+            "system": "",
+            "value": "PAYERID2052789"
+          }
+        ],
+        "fullAddressDisplay": "",
+        "extension": [
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/distributeToParentOrganization",
+            "valueBoolean": false
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/distributeToPractitioner",
+            "valueBoolean": false
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/notes",
+            "valueString": "Payer notes"
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/timezone",
+            "valueString": "Namibia Standard Time"
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/practiceType",
+            "extension": []
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/preliminary",
+            "extension": []
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/final",
+            "extension": []
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/image",
+            "extension": []
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/financialClass",
+            "valueCoding": {
+              "code": "SP",
+              "display": "SELF-PAY"
+            }
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/extension/inheritStudyStatus",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://www.ramsoft.com/fhir/StructureDefinition/inheritStudyTypeFromParentOrganization",
+            "valueBoolean": true
+          }
+        ],
+        "practiceTypeDisplay": "",
+        "inheritStudyType": true,
+        "leaf": false,
+        "fullUrl": "urn:uuid1194afcf-8471-4bea-8313-2955e369a57c",
+        "address": [
+          {
+            "city": "Waterloo",
+            "state": "ON",
+            "postalCode": "N2P0C7",
+            "country": "canada",
+            "line": [
+              "123 King street"
+            ]
+          }
+        ],
+        "telecom": [],
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "INS",
+                "display": "Insurance Company"
+              }
+            ]
+          }
+        ],
+        "partOf": {
+          "id": "5307797",
+          "reference": "organization/5307797",
+          "display": "TEST MANAGING ORG 01"
+        },
+        "managingOrganization": {
+          "id": "",
+          "display": ""
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "/Coverage/"
+      },
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "",
+        "extension": [
+          {
+            "url": "isActive",
+            "valueBoolean": true
+          },
+          {
+            "url": "financialClass",
+            "valueCoding": {
+              "code": "",
+              "display": ""
+            }
+          },
+          {
+            "url": "copayType",
+            "valueString": "$"
+          },
+          {
+            "url": "copayAmount",
+            "valueDecimal": 0
+          },
+          {
+            "url": "copayPercent",
+            "valueDecimal": 0
+          },
+          {
+            "url": "claimAdjustorPhone",
+            "valueString": ""
+          },
+          {
+            "url": "claimAdjustorName",
+            "valueHumanName": {
+              "text": ""
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/customfield1",
+            "valueString": ""
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/customfield2",
+            "valueString": ""
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/custommemo1",
+            "valueString": ""
+          },
+          {
+            "url": "insuranceCardBack"
+          },
+          {
+            "url": "insuranceCardFront"
+          }
+        ],
+        "status": "active",
+        "subscriber": {
+          "id": "1779605",
+          "reference": "Patient/1779605",
+          "display": "NEW PATIENT 1 TRUONG"
+        },
+        "subscriberId": "SUB-ID-01",
+        "beneficiary": {
+          "id": "1779605",
+          "reference": "Patient/1779605"
+        },
+        "relationship": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/policyholder-relationship",
+              "code": "SELF",
+              "display": "SELF"
+            }
+          ]
+        },
+        "period": {
+          "start": "2023-03-12T17:00:00.000Z",
+          "end": "2025-03-12T17:00:00.000Z"
+        },
+        "payor": [
+          {
+            "id": "2",
+            "reference": "InsurancePayer/2",
+            "display": "PAYER"
+          }
+        ],
+        "class": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+                  "code": "group"
+                }
+              ]
+            },
+            "value": "Group-Num-01",
+            "name": "group"
+          }
+        ],
+        "order": 2,
+        "subrogation": false
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "/Account/"
+      },
+      "resource": {
+        "coverage": [],
+        "identifier": [
+          {
+            "system": "",
+            "value": "ACC2052789"
+          }
+        ],
+        "accountSystem": "urn:oid:0.1.2.3.4.5.6.7",
+        "extension": [
+          {
+            "valueString": "0",
+            "url": "balance"
+          }
+        ],
+        "resource": {
+          "identifier": [
+            {
+              "system": "",
+              "value": "125400"
+            }
+          ],
+          "id": "-1",
+          "status": ""
+        },
+        "meta": {},
+        "subject": [
+          {
+            "reference": "urn:uuidd1e60aa1-e6e8-4566-859b-f7857e4e1d50"
+          }
+        ],
+        "metaLastUpdated": "",
+        "guarantor": [
+          {
+            "telecom": [
+              {
+                "system": "email"
+              },
+              {
+                "system": "phone",
+                "use": "mobile"
+              },
+              {
+                "system": "phone",
+                "use": "work"
+              },
+              {
+                "system": "phone",
+                "use": "home"
+              }
+            ],
+            "party": {
+              "reference": "urn:uuidd1e60aa1-e6e8-4566-859b-f7857e4e1d50",
+              "extension": [
+                {
+                  "valueCoding": {
+                    "code": "SEL",
+                    "display": "SELF"
+                  },
+                  "url": "guarantorRelationship"
+                }
+              ],
+              "birthdate": "",
+              "managingOrganization": "",
+              "patientID": "",
+              "display": "Adams^Baker^Middle^MR.^II"
+            }
+          }
+        ],
+        "id": "-1",
+        "resourceType": "Account",
+        "status": ""
+      },
+      "fullUrl": "urn:uuid28207c9c-d14a-40de-9e9d-f3f383049738"
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "/AllergyIntolerance/"
+      },
+      "fullUrl": "urn:uuide0f9f97f-b497-4ff9-827a-af8edc5a3e89",
+      "resource": {
+        "id": "-2",
+        "criticality": "high",
+        "resourceType": "AllergyIntolerance",
+        "severity": "moderate",
+        "onsetDateTime": "2022-01-25T00:00:00",
+        "code": {
+          "coding": [
+            {
+              "code": "2215009",
+              "display": "Azuresin"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Allergy 2"
+          }
+        ],
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuidd1e60aa1-e6e8-4566-859b-f7857e4e1d50"
+        },
+        "reaction": [
+          {
+            "severity": "moderate"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "/AllergyIntolerance/"
+      },
+      "fullUrl": "urn:uuide955d40f-35e9-4577-b65d-334048b11dd1",
+      "resource": {
+        "id": "-1",
+        "criticality": "low",
+        "resourceType": "AllergyIntolerance",
+        "severity": "mild",
+        "onsetDateTime": "2022-01-24T00:00:00",
+        "code": {
+          "coding": [
+            {
+              "code": "7460002",
+              "display": "^127^Tellurium"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Allergy 1"
+          }
+        ],
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "unconfirmed",
+              "display": "Unconfirmed"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuidd1e60aa1-e6e8-4566-859b-f7857e4e1d50"
+        },
+        "reaction": [
+          {
+            "severity": "mild"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "/Condition/"
+      },
+      "fullUrl": "urn:uuid2e4c8006-964f-490e-8575-9b19bcc0052a",
+      "resource": {
+        "id": "-2",
+        "resourceType": "Condition",
+        "identifier": [],
+        "noteText": "Condition Note 2",
+        "resource": {
+          "identifier": []
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "resolved",
+              "display": "Resolved"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuidd1e60aa1-e6e8-4566-859b-f7857e4e1d50"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "100558008",
+              "display": "ERYTHRO -200"
+            }
+          ]
+        },
+        "onsetDateTime": "2022-02-01T00:52:17.692Z",
+        "note": [
+          {
+            "text": "Condition Note 2"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "/Condition/"
+      },
+      "fullUrl": "urn:uuid09c80460-26c8-4232-8788-2f37129b4a59",
+      "resource": {
+        "id": "-1",
+        "resourceType": "Condition",
+        "identifier": [],
+        "noteText": "Condition Note 1",
+        "resource": {
+          "identifier": []
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "provisional",
+              "display": "Provisional"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuidd1e60aa1-e6e8-4566-859b-f7857e4e1d50"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "100537002",
+              "display": "EQUI-SHIELD SPRAY"
+            }
+          ]
+        },
+        "onsetDateTime": "2022-02-01T00:51:00.000Z",
+        "note": [
+          {
+            "text": "Condition Note 1"
+          }
+        ]
+      }
+    }
+  ]
+}

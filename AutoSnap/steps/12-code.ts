@@ -1,0 +1,1 @@
+await page.getByRole('menu').screenshot({ path: './img/mo4.png' });

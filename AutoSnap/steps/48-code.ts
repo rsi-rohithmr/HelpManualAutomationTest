@@ -1,0 +1,1 @@
+await page.getByTestId('navigator-combined-button-add').click({  force: true , timeout: 20000 });

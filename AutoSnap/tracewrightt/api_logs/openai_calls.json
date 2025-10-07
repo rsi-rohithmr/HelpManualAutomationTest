@@ -1,0 +1,1113 @@
+[
+  {
+    "timestamp": "2025-09-05T06:42:42.890Z",
+    "provider": "openai",
+    "model": "test-specific-model",
+    "rawRequest": {
+      "model": "test-specific-model",
+      "messages": [
+        {
+          "role": "system",
+          "content": "system instruction"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Page URL: http://example.com"
+            },
+            {
+              "type": "text",
+              "text": "Current Page Screenshot:"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/png;base64,c2NyZWVuc2hvdCBkYXRh"
+              }
+            },
+            {
+              "type": "text",
+              "text": "Current Page Visible HTML: <button>Click Me</button>"
+            },
+            {
+              "type": "text",
+              "text": "Already Executed Code:\nconsole.log('previous');"
+            },
+            {
+              "type": "text",
+              "text": "Failed Code:\nError: previous step failed"
+            },
+            {
+              "type": "text",
+              "text": "scenario text"
+            }
+          ]
+        }
+      ],
+      "max_completion_tokens": 4096,
+      "temperature": 0.4
+    },
+    "rawResponse": {
+      "choices": [
+        {
+          "message": {
+            "content": "```javascript\nconsole.log('hello');\n```"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 10,
+        "completion_tokens": 5
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 200,
+      "content": "```javascript\nconsole.log('hello');\n```",
+      "inputTokenCount": 10,
+      "outputTokenCount": 5,
+      "totalTokens": 15,
+      "thinking": "No thinking provided",
+      "code": "console.log('hello');"
+    },
+    "metadata": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-05T06:42:42.907Z",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "rawRequest": {
+      "model": "gpt-4o",
+      "messages": [
+        {
+          "role": "system",
+          "content": "system instruction"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Page URL: http://example.com"
+            },
+            {
+              "type": "text",
+              "text": "Current Page Screenshot:"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/png;base64,c2NyZWVuc2hvdCBkYXRh"
+              }
+            },
+            {
+              "type": "text",
+              "text": "Current Page Visible HTML: <button>Click Me</button>"
+            },
+            {
+              "type": "text",
+              "text": "scenario text"
+            }
+          ]
+        }
+      ],
+      "max_completion_tokens": 4096,
+      "temperature": 0.4
+    },
+    "rawResponse": {
+      "choices": [
+        {
+          "message": {
+            "content": "just some text, no code block"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 8,
+        "completion_tokens": 3
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "just some text, no code block",
+      "inputTokenCount": 8,
+      "outputTokenCount": 3,
+      "totalTokens": 11,
+      "thinking": "No thinking provided",
+      "code": "just some text, no code block"
+    },
+    "metadata": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-05T06:42:42.926Z",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "rawRequest": {
+      "model": "gpt-4o",
+      "messages": [
+        {
+          "role": "system",
+          "content": "system instruction"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Page URL: http://example.com"
+            },
+            {
+              "type": "text",
+              "text": "Current Page Screenshot:"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/png;base64,c2NyZWVuc2hvdCBkYXRh"
+              }
+            },
+            {
+              "type": "text",
+              "text": "Current Page Visible HTML: <button>Click Me</button>"
+            },
+            {
+              "type": "text",
+              "text": "Already Executed Code:\nconsole.log('previous');"
+            },
+            {
+              "type": "text",
+              "text": "Failed Code:\nError: previous step failed"
+            },
+            {
+              "type": "text",
+              "text": "scenario text"
+            }
+          ]
+        }
+      ],
+      "max_completion_tokens": 4096,
+      "temperature": 0.4
+    },
+    "rawResponse": {
+      "choices": [
+        {
+          "message": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 10,
+        "completion_tokens": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 10,
+      "outputTokenCount": 0,
+      "totalTokens": 10,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-05T06:42:42.933Z",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "rawRequest": {
+      "model": "gpt-4o",
+      "messages": [
+        {
+          "role": "system",
+          "content": "system instruction"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Page URL: http://example.com"
+            },
+            {
+              "type": "text",
+              "text": "Current Page Screenshot:"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/png;base64,c2NyZWVuc2hvdCBkYXRh"
+              }
+            },
+            {
+              "type": "text",
+              "text": "Current Page Visible HTML: <button>Click Me</button>"
+            },
+            {
+              "type": "text",
+              "text": "scenario text"
+            }
+          ]
+        }
+      ],
+      "max_completion_tokens": 4096,
+      "temperature": 0.4
+    },
+    "rawResponse": {
+      "choices": [
+        {}
+      ],
+      "usage": {
+        "prompt_tokens": 1,
+        "completion_tokens": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 1,
+      "outputTokenCount": 0,
+      "totalTokens": 1,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-05T06:42:42.937Z",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "rawRequest": {
+      "model": "gpt-4o",
+      "messages": [
+        {
+          "role": "system",
+          "content": "system instruction"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Page URL: http://example.com"
+            },
+            {
+              "type": "text",
+              "text": "Current Page Screenshot:"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/png;base64,c2NyZWVuc2hvdCBkYXRh"
+              }
+            },
+            {
+              "type": "text",
+              "text": "Current Page Visible HTML: <button>Click Me</button>"
+            },
+            {
+              "type": "text",
+              "text": "scenario text"
+            }
+          ]
+        }
+      ],
+      "max_completion_tokens": 4096,
+      "temperature": 0.4
+    },
+    "rawResponse": {
+      "choices": [],
+      "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 3,
+      "outputTokenCount": 0,
+      "totalTokens": 3,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-05T06:42:42.944Z",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "rawRequest": {
+      "model": "gpt-4o",
+      "messages": [
+        {
+          "role": "system",
+          "content": "system instruction"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Page URL: http://example.com"
+            },
+            {
+              "type": "text",
+              "text": "Current Page Screenshot:"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/png;base64,c2NyZWVuc2hvdCBkYXRh"
+              }
+            },
+            {
+              "type": "text",
+              "text": "Current Page Visible HTML: <button>Click Me</button>"
+            },
+            {
+              "type": "text",
+              "text": "scenario text"
+            }
+          ]
+        }
+      ],
+      "max_completion_tokens": 4096,
+      "temperature": 0.4
+    },
+    "rawResponse": {
+      "error": true,
+      "message": "Cannot read properties of null (reading '0')",
+      "status": 500
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 500,
+      "content": "Cannot read properties of null (reading '0')",
+      "inputTokenCount": 0,
+      "outputTokenCount": 0,
+      "totalTokens": 0,
+      "thinking": "Error occurred",
+      "code": "error"
+    },
+    "metadata": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "duration": 1
+  },
+  {
+    "timestamp": "2025-09-05T06:42:42.949Z",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "rawRequest": {
+      "model": "gpt-4o",
+      "messages": [
+        {
+          "role": "system",
+          "content": "system instruction"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Page URL: http://example.com"
+            },
+            {
+              "type": "text",
+              "text": "Current Page Screenshot:"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/png;base64,c2NyZWVuc2hvdCBkYXRh"
+              }
+            },
+            {
+              "type": "text",
+              "text": "Current Page Visible HTML: <button>Click Me</button>"
+            },
+            {
+              "type": "text",
+              "text": "scenario text"
+            }
+          ]
+        }
+      ],
+      "max_completion_tokens": 4096,
+      "temperature": 0.4
+    },
+    "rawResponse": {
+      "choices": [],
+      "usage": null
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 0,
+      "outputTokenCount": 0,
+      "totalTokens": 0,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-05T06:42:42.955Z",
+    "provider": "openai",
+    "model": "test-model-no-extras",
+    "rawRequest": {
+      "model": "test-model-no-extras",
+      "messages": [
+        {
+          "role": "system",
+          "content": "system instruction"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Page URL: http://example.com"
+            },
+            {
+              "type": "text",
+              "text": "Current Page Screenshot:"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/png;base64,c2NyZWVuc2hvdCBkYXRh"
+              }
+            },
+            {
+              "type": "text",
+              "text": "Current Page Visible HTML: <button>Click Me</button>"
+            },
+            {
+              "type": "text",
+              "text": "scenario text"
+            }
+          ]
+        }
+      ],
+      "max_completion_tokens": 4096,
+      "temperature": 0.4
+    },
+    "rawResponse": {
+      "choices": [
+        {
+          "message": {
+            "content": "code"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1,
+        "completion_tokens": 1
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "code",
+      "inputTokenCount": 1,
+      "outputTokenCount": 1,
+      "totalTokens": 2,
+      "thinking": "No thinking provided",
+      "code": "code"
+    },
+    "metadata": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "duration": 1
+  },
+  {
+    "timestamp": "2025-09-05T06:42:43.068Z",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "rawRequest": {
+      "model": "gpt-4o",
+      "messages": [
+        {
+          "role": "system",
+          "content": "system instruction"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Page URL: http://example.com"
+            },
+            {
+              "type": "text",
+              "text": "Current Page Screenshot:"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/png;base64,c2NyZWVuc2hvdCBkYXRh"
+              }
+            },
+            {
+              "type": "text",
+              "text": "Current Page Visible HTML: <button>Click Me</button>"
+            },
+            {
+              "type": "text",
+              "text": "scenario text"
+            }
+          ]
+        }
+      ],
+      "max_completion_tokens": 4096,
+      "temperature": 0.4
+    },
+    "rawResponse": {
+      "choices": [
+        {
+          "message": {
+            "content": "code"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1,
+        "completion_tokens": 1
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "code",
+      "inputTokenCount": 1,
+      "outputTokenCount": 1,
+      "totalTokens": 2,
+      "thinking": "No thinking provided",
+      "code": "code"
+    },
+    "metadata": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-05T06:42:43.088Z",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "rawRequest": {
+      "model": "gpt-4o",
+      "messages": [
+        {
+          "role": "system",
+          "content": "system instruction"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Page URL: http://example.com"
+            },
+            {
+              "type": "text",
+              "text": "Current Page Screenshot:"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/png;base64,c2NyZWVuc2hvdCBkYXRh"
+              }
+            },
+            {
+              "type": "text",
+              "text": "Current Page Visible HTML: <button>Click Me</button>"
+            },
+            {
+              "type": "text",
+              "text": "Already Executed Code:\nconsole.log('previous');"
+            },
+            {
+              "type": "text",
+              "text": "Failed Code:\nError: previous step failed"
+            },
+            {
+              "type": "text",
+              "text": "scenario text"
+            }
+          ]
+        }
+      ],
+      "max_completion_tokens": 4096,
+      "temperature": 0.4
+    },
+    "rawResponse": {
+      "error": true,
+      "message": "No code matches found",
+      "status": 500
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 500,
+      "content": "No code matches found",
+      "inputTokenCount": 0,
+      "outputTokenCount": 0,
+      "totalTokens": 0,
+      "thinking": "Error occurred",
+      "code": "error"
+    },
+    "metadata": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "duration": 1
+  },
+  {
+    "timestamp": "2025-09-05T06:42:43.097Z",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "rawRequest": {
+      "model": "gpt-4o",
+      "messages": [
+        {
+          "role": "system",
+          "content": "system instruction"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Page URL: http://example.com"
+            },
+            {
+              "type": "text",
+              "text": "Current Page Screenshot:"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/png;base64,c2NyZWVuc2hvdCBkYXRh"
+              }
+            },
+            {
+              "type": "text",
+              "text": "Current Page Visible HTML: <button>Click Me</button>"
+            },
+            {
+              "type": "text",
+              "text": "scenario text"
+            }
+          ]
+        }
+      ],
+      "max_completion_tokens": 4096,
+      "temperature": 0.4
+    },
+    "rawResponse": {
+      "choices": [
+        {
+          "message": {
+            "content": "{\"thinking\": \"I need to click the button\", \"code\": \"await page.click(\\\"button\\\");\"}"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 15,
+        "completion_tokens": 8
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "{\"thinking\": \"I need to click the button\", \"code\": \"await page.click(\\\"button\\\");\"}",
+      "inputTokenCount": 15,
+      "outputTokenCount": 8,
+      "totalTokens": 23,
+      "thinking": "I need to click the button",
+      "code": "await page.click(\"button\");"
+    },
+    "metadata": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-05T06:42:43.105Z",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "rawRequest": {
+      "model": "gpt-4o",
+      "messages": [
+        {
+          "role": "system",
+          "content": "system instruction"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Page URL: http://example.com"
+            },
+            {
+              "type": "text",
+              "text": "Current Page Screenshot:"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/png;base64,c2NyZWVuc2hvdCBkYXRh"
+              }
+            },
+            {
+              "type": "text",
+              "text": "Current Page Visible HTML: <button>Click Me</button>"
+            },
+            {
+              "type": "text",
+              "text": "scenario text"
+            }
+          ]
+        }
+      ],
+      "max_completion_tokens": 4096,
+      "temperature": 0.4
+    },
+    "rawResponse": {
+      "choices": [
+        {
+          "message": {
+            "content": "```javascript\nawait page.click('.button');\n```"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 12,
+        "completion_tokens": 6
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "```javascript\nawait page.click('.button');\n```",
+      "inputTokenCount": 12,
+      "outputTokenCount": 6,
+      "totalTokens": 18,
+      "thinking": "No thinking provided",
+      "code": "await page.click('.button');"
+    },
+    "metadata": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-05T06:42:43.113Z",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "rawRequest": {
+      "model": "gpt-4o",
+      "messages": [
+        {
+          "role": "system",
+          "content": "system instruction"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Page URL: http://example.com"
+            },
+            {
+              "type": "text",
+              "text": "Current Page Screenshot:"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/png;base64,c2NyZWVuc2hvdCBkYXRh"
+              }
+            },
+            {
+              "type": "text",
+              "text": "Current Page Visible HTML: <button>Click Me</button>"
+            },
+            {
+              "type": "text",
+              "text": "scenario text"
+            }
+          ]
+        }
+      ],
+      "max_completion_tokens": 4096,
+      "temperature": 0.4
+    },
+    "rawResponse": {
+      "choices": [
+        {
+          "message": {
+            "content": "```javascript\nawait page.click('.button', { force: true });\n```"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 12,
+        "completion_tokens": 6
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "```javascript\nawait page.click('.button', { force: true });\n```",
+      "inputTokenCount": 12,
+      "outputTokenCount": 6,
+      "totalTokens": 18,
+      "thinking": "No thinking provided",
+      "code": "await page.click('.button', { force: true });"
+    },
+    "metadata": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-05T06:42:43.121Z",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "rawRequest": {
+      "model": "gpt-4o",
+      "messages": [
+        {
+          "role": "system",
+          "content": "system instruction"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Page URL: http://example.com"
+            },
+            {
+              "type": "text",
+              "text": "Current Page Screenshot:"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/png;base64,c2NyZWVuc2hvdCBkYXRh"
+              }
+            },
+            {
+              "type": "text",
+              "text": "Current Page Visible HTML: <button>Click Me</button>"
+            },
+            {
+              "type": "text",
+              "text": "Based on the information of the previous step gauge which step to do next following the order of the instructions. Thought behind the previous step:\nPrevious step was to navigate to login page"
+            },
+            {
+              "type": "text",
+              "text": "scenario text"
+            }
+          ]
+        }
+      ],
+      "max_completion_tokens": 4096,
+      "temperature": 0.4
+    },
+    "rawResponse": {
+      "choices": [
+        {
+          "message": {
+            "content": "code"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1,
+        "completion_tokens": 1
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "code",
+      "inputTokenCount": 1,
+      "outputTokenCount": 1,
+      "totalTokens": 2,
+      "thinking": "No thinking provided",
+      "code": "code"
+    },
+    "metadata": {
+      "temperature": 0,
+      "maxTokens": 4096
+    },
+    "duration": 1
+  }
+]

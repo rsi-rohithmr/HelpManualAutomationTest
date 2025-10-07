@@ -1,0 +1,4590 @@
+[
+  {
+    "timestamp": "2025-09-09T12:42:23.798Z",
+    "provider": "gemini",
+    "model": "test-specific-model",
+    "rawRequest": {
+      "model": "test-specific-model",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "Already Executed Code:\nconsole.log('previous');"
+        },
+        {
+          "text": "Failed Code:\nError: previous step failed"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "```javascript\nconsole.log('hello');\n```"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 10,
+        "candidatesTokenCount": 5
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 200,
+      "content": "```javascript\nconsole.log('hello');\n```",
+      "inputTokenCount": 10,
+      "outputTokenCount": 5,
+      "totalTokens": 15,
+      "thinking": "No thinking provided",
+      "code": "console.log('hello');"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:42:23.832Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "just some text, no code block"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 8,
+        "candidatesTokenCount": 3
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "just some text, no code block",
+      "inputTokenCount": 8,
+      "outputTokenCount": 3,
+      "totalTokens": 11,
+      "thinking": "No thinking provided",
+      "code": "just some text, no code block"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:42:23.853Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "Already Executed Code:\nconsole.log('previous');"
+        },
+        {
+          "text": "Failed Code:\nError: previous step failed"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {}
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 10,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 10,
+      "outputTokenCount": 0,
+      "totalTokens": 10,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:42:24.069Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": []
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 1,
+      "outputTokenCount": 0,
+      "totalTokens": 1,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 1
+  },
+  {
+    "timestamp": "2025-09-09T12:42:24.080Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {}
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 2,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 2,
+      "outputTokenCount": 0,
+      "totalTokens": 2,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:42:24.096Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [],
+      "usageMetadata": {
+        "promptTokenCount": 3,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 3,
+      "outputTokenCount": 0,
+      "totalTokens": 3,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 1
+  },
+  {
+    "timestamp": "2025-09-09T12:42:24.111Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": null,
+      "usageMetadata": {
+        "promptTokenCount": 4,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 4,
+      "outputTokenCount": 0,
+      "totalTokens": 4,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:42:24.431Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [],
+      "usageMetadata": null
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 0,
+      "outputTokenCount": 0,
+      "totalTokens": 0,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:42:24.449Z",
+    "provider": "gemini",
+    "model": "test-model-no-extras",
+    "rawRequest": {
+      "model": "test-model-no-extras",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "code"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1,
+        "candidatesTokenCount": 1
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "code",
+      "inputTokenCount": 1,
+      "outputTokenCount": 1,
+      "totalTokens": 2,
+      "thinking": "No thinking provided",
+      "code": "code"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:42:24.464Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "code"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1,
+        "candidatesTokenCount": 1
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "code",
+      "inputTokenCount": 1,
+      "outputTokenCount": 1,
+      "totalTokens": 2,
+      "thinking": "No thinking provided",
+      "code": "code"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 1
+  },
+  {
+    "timestamp": "2025-09-09T12:42:24.480Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "Already Executed Code:\nconsole.log('previous');"
+        },
+        {
+          "text": "Failed Code:\nError: previous step failed"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "error": true,
+      "message": "No code matches found",
+      "status": 500
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 500,
+      "content": "No code matches found",
+      "inputTokenCount": 0,
+      "outputTokenCount": 0,
+      "totalTokens": 0,
+      "thinking": "Error occurred",
+      "code": "error"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 1
+  },
+  {
+    "timestamp": "2025-09-09T12:43:03.222Z",
+    "provider": "gemini",
+    "model": "test-specific-model",
+    "rawRequest": {
+      "model": "test-specific-model",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "Already Executed Code:\nconsole.log('previous');"
+        },
+        {
+          "text": "Failed Code:\nError: previous step failed"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "```javascript\nconsole.log('hello');\n```"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 10,
+        "candidatesTokenCount": 5
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 200,
+      "content": "```javascript\nconsole.log('hello');\n```",
+      "inputTokenCount": 10,
+      "outputTokenCount": 5,
+      "totalTokens": 15,
+      "thinking": "No thinking provided",
+      "code": "console.log('hello');"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:03.240Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "just some text, no code block"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 8,
+        "candidatesTokenCount": 3
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "just some text, no code block",
+      "inputTokenCount": 8,
+      "outputTokenCount": 3,
+      "totalTokens": 11,
+      "thinking": "No thinking provided",
+      "code": "just some text, no code block"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:03.247Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "Already Executed Code:\nconsole.log('previous');"
+        },
+        {
+          "text": "Failed Code:\nError: previous step failed"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {}
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 10,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 10,
+      "outputTokenCount": 0,
+      "totalTokens": 10,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:03.253Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": []
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 1,
+      "outputTokenCount": 0,
+      "totalTokens": 1,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 1
+  },
+  {
+    "timestamp": "2025-09-09T12:43:03.259Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {}
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 2,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 2,
+      "outputTokenCount": 0,
+      "totalTokens": 2,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:03.264Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [],
+      "usageMetadata": {
+        "promptTokenCount": 3,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 3,
+      "outputTokenCount": 0,
+      "totalTokens": 3,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:03.270Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": null,
+      "usageMetadata": {
+        "promptTokenCount": 4,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 4,
+      "outputTokenCount": 0,
+      "totalTokens": 4,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:03.515Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [],
+      "usageMetadata": null
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 0,
+      "outputTokenCount": 0,
+      "totalTokens": 0,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:03.769Z",
+    "provider": "gemini",
+    "model": "test-model-no-extras",
+    "rawRequest": {
+      "model": "test-model-no-extras",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "code"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1,
+        "candidatesTokenCount": 1
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "code",
+      "inputTokenCount": 1,
+      "outputTokenCount": 1,
+      "totalTokens": 2,
+      "thinking": "No thinking provided",
+      "code": "code"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:03.782Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "code"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1,
+        "candidatesTokenCount": 1
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "code",
+      "inputTokenCount": 1,
+      "outputTokenCount": 1,
+      "totalTokens": 2,
+      "thinking": "No thinking provided",
+      "code": "code"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:04.357Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "Already Executed Code:\nconsole.log('previous');"
+        },
+        {
+          "text": "Failed Code:\nError: previous step failed"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "error": true,
+      "message": "No code matches found",
+      "status": 500
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 500,
+      "content": "No code matches found",
+      "inputTokenCount": 0,
+      "outputTokenCount": 0,
+      "totalTokens": 0,
+      "thinking": "Error occurred",
+      "code": "error"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:42.276Z",
+    "provider": "gemini",
+    "model": "test-specific-model",
+    "rawRequest": {
+      "model": "test-specific-model",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "Already Executed Code:\nconsole.log('previous');"
+        },
+        {
+          "text": "Failed Code:\nError: previous step failed"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "```javascript\nconsole.log('hello');\n```"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 10,
+        "candidatesTokenCount": 5
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 200,
+      "content": "```javascript\nconsole.log('hello');\n```",
+      "inputTokenCount": 10,
+      "outputTokenCount": 5,
+      "totalTokens": 15,
+      "thinking": "No thinking provided",
+      "code": "console.log('hello');"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 1
+  },
+  {
+    "timestamp": "2025-09-09T12:43:42.334Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "just some text, no code block"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 8,
+        "candidatesTokenCount": 3
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "just some text, no code block",
+      "inputTokenCount": 8,
+      "outputTokenCount": 3,
+      "totalTokens": 11,
+      "thinking": "No thinking provided",
+      "code": "just some text, no code block"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:42.359Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "Already Executed Code:\nconsole.log('previous');"
+        },
+        {
+          "text": "Failed Code:\nError: previous step failed"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {}
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 10,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 10,
+      "outputTokenCount": 0,
+      "totalTokens": 10,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:42.388Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": []
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 1,
+      "outputTokenCount": 0,
+      "totalTokens": 1,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 1
+  },
+  {
+    "timestamp": "2025-09-09T12:43:42.408Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {}
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 2,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 2,
+      "outputTokenCount": 0,
+      "totalTokens": 2,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:42.432Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [],
+      "usageMetadata": {
+        "promptTokenCount": 3,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 3,
+      "outputTokenCount": 0,
+      "totalTokens": 3,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 1
+  },
+  {
+    "timestamp": "2025-09-09T12:43:42.449Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": null,
+      "usageMetadata": {
+        "promptTokenCount": 4,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 4,
+      "outputTokenCount": 0,
+      "totalTokens": 4,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:43.385Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [],
+      "usageMetadata": null
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 0,
+      "outputTokenCount": 0,
+      "totalTokens": 0,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:45.078Z",
+    "provider": "gemini",
+    "model": "test-model-no-extras",
+    "rawRequest": {
+      "model": "test-model-no-extras",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "code"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1,
+        "candidatesTokenCount": 1
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "code",
+      "inputTokenCount": 1,
+      "outputTokenCount": 1,
+      "totalTokens": 2,
+      "thinking": "No thinking provided",
+      "code": "code"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:45.107Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "code"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1,
+        "candidatesTokenCount": 1
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "code",
+      "inputTokenCount": 1,
+      "outputTokenCount": 1,
+      "totalTokens": 2,
+      "thinking": "No thinking provided",
+      "code": "code"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:45.129Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "Already Executed Code:\nconsole.log('previous');"
+        },
+        {
+          "text": "Failed Code:\nError: previous step failed"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "error": true,
+      "message": "No code matches found",
+      "status": 500
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 500,
+      "content": "No code matches found",
+      "inputTokenCount": 0,
+      "outputTokenCount": 0,
+      "totalTokens": 0,
+      "thinking": "Error occurred",
+      "code": "error"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 1
+  },
+  {
+    "timestamp": "2025-09-09T12:43:59.078Z",
+    "provider": "gemini",
+    "model": "test-specific-model",
+    "rawRequest": {
+      "model": "test-specific-model",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "Already Executed Code:\nconsole.log('previous');"
+        },
+        {
+          "text": "Failed Code:\nError: previous step failed"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "```javascript\nconsole.log('hello');\n```"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 10,
+        "candidatesTokenCount": 5
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 200,
+      "content": "```javascript\nconsole.log('hello');\n```",
+      "inputTokenCount": 10,
+      "outputTokenCount": 5,
+      "totalTokens": 15,
+      "thinking": "No thinking provided",
+      "code": "console.log('hello');"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 1
+  },
+  {
+    "timestamp": "2025-09-09T12:43:59.106Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "just some text, no code block"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 8,
+        "candidatesTokenCount": 3
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "just some text, no code block",
+      "inputTokenCount": 8,
+      "outputTokenCount": 3,
+      "totalTokens": 11,
+      "thinking": "No thinking provided",
+      "code": "just some text, no code block"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:59.118Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "Already Executed Code:\nconsole.log('previous');"
+        },
+        {
+          "text": "Failed Code:\nError: previous step failed"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {}
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 10,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 10,
+      "outputTokenCount": 0,
+      "totalTokens": 10,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.4,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:59.132Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": []
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 1,
+      "outputTokenCount": 0,
+      "totalTokens": 1,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.4,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:59.147Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {}
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 2,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 2,
+      "outputTokenCount": 0,
+      "totalTokens": 2,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.4,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:59.163Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [],
+      "usageMetadata": {
+        "promptTokenCount": 3,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 3,
+      "outputTokenCount": 0,
+      "totalTokens": 3,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.4,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:43:59.182Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": null,
+      "usageMetadata": {
+        "promptTokenCount": 4,
+        "candidatesTokenCount": 0
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 4,
+      "outputTokenCount": 0,
+      "totalTokens": 4,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.4,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:44:01.237Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [],
+      "usageMetadata": null
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "No response from LLM",
+      "inputTokenCount": 0,
+      "outputTokenCount": 0,
+      "totalTokens": 0,
+      "thinking": "No response from LLM",
+      "code": "done"
+    },
+    "metadata": {
+      "temperature": 0.4,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 1
+  },
+  {
+    "timestamp": "2025-09-09T12:44:02.118Z",
+    "provider": "gemini",
+    "model": "test-model-no-extras",
+    "rawRequest": {
+      "model": "test-model-no-extras",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "code"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1,
+        "candidatesTokenCount": 1
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "code",
+      "inputTokenCount": 1,
+      "outputTokenCount": 1,
+      "totalTokens": 2,
+      "thinking": "No thinking provided",
+      "code": "code"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:44:02.138Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "code"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1,
+        "candidatesTokenCount": 1
+      }
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "",
+      "currentStepErrorCode": ""
+    },
+    "response": {
+      "status": 200,
+      "content": "code",
+      "inputTokenCount": 1,
+      "outputTokenCount": 1,
+      "totalTokens": 2,
+      "thinking": "No thinking provided",
+      "code": "code"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 0
+  },
+  {
+    "timestamp": "2025-09-09T12:44:02.156Z",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro-preview-05-06",
+    "rawRequest": {
+      "model": "gemini-2.5-pro-preview-05-06",
+      "contents": [
+        {
+          "text": "Current Page URL: http://example.com"
+        },
+        {
+          "text": "Current Page Screenshot:"
+        },
+        {
+          "inlineData": {
+            "data": "c2NyZWVuc2hvdCBkYXRh",
+            "mimeType": "image/png"
+          }
+        },
+        {
+          "text": "Current Page Visible HTML: <button>Click Me</button>"
+        },
+        {
+          "text": "Already Executed Code:\nconsole.log('previous');"
+        },
+        {
+          "text": "Failed Code:\nError: previous step failed"
+        },
+        {
+          "text": "scenario text"
+        }
+      ],
+      "config": {
+        "systemInstruction": "system instruction",
+        "temperature": 0.7,
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_ONLY_HIGH"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_ONLY_HIGH"
+          }
+        ]
+      }
+    },
+    "rawResponse": {
+      "error": true,
+      "message": "No code matches found",
+      "status": 500
+    },
+    "request": {
+      "systemInstruction": "system instruction",
+      "userPrompt": "scenario text",
+      "hasImage": true,
+      "imageSize": 15,
+      "pageUrl": "http://example.com",
+      "visibleElementsLength": 25,
+      "previouslyExecutedCode": "console.log('previous');",
+      "currentStepErrorCode": "Error: previous step failed"
+    },
+    "response": {
+      "status": 500,
+      "content": "No code matches found",
+      "inputTokenCount": 0,
+      "outputTokenCount": 0,
+      "totalTokens": 0,
+      "thinking": "Error occurred",
+      "code": "error"
+    },
+    "metadata": {
+      "temperature": 0.7,
+      "safetySettings": [
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_ONLY_HIGH"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_ONLY_HIGH"
+        }
+      ]
+    },
+    "duration": 1
+  }
+]

@@ -1,0 +1,136 @@
+
+=====================
+Full Prompt for Step 7
+=====================
+
+-------- System Instruction --------
+You are a world-class Playwright code-generation expert, relentlessly focused on SPEED and ROBUSTNESS. Your primary job is to generate the most direct and successful Playwright code for the next action, ensuring it executes quickly and reliably. Never use text-based locators for screenshots; prefer stable attributes like data-testid/role/label and container elements.
+
+-------- Scenario Text --------
+```json
+{
+  "thinking": "Screenshots to capture: 1) ./img_as/mo1_E.png: Shows the 'Mais Opções' menu in the image viewer toolbar with its options fully visible. 2) ./img_as/mo2_E.png: Shows the 'Alternâncias' submenu within the 'Mais Opções' menu, with all toggles fully visible. 3) ./img_as/mo3_E.png: Highlights the 'Sobreposição' toggle within the 'Alternâncias' submenu. 4) ./img_as/mo4_E.png: Displays the 'Vincular Séries' section of the 'Mais Opções' menu, with the unlink and linking options visible. 5) ./img_as/mo5_E.png: Shows the 'Download' section of the 'Mais Opções' menu, including 'Baixar Imagem' and 'Baixar Estudo' options. 6) ./img_as/mo6-1_E.png: Displays the 'Configurações' section of the 'Mais Opções' menu, showing multiple subsections like 'Protocolos de Suspensão' and 'Personalizando Sobreposição'. 7) ./img/More%20Settings.png: Shows the 'Configurações' section with additional options for toggling settings like 'Abrir Automaticamente o Explorador de Estudos', 'Redefinir Ferramentas de Marcação', and 'Ocultar Automaticamente o Menu do Viewport'. 8) ./img_as/mo7_E.png: Displays the 'Abrir em Janela Separada' option in the 'Mais Opções' menu. 9) ./img_as/mo8_E.png: Shows the 'Modo Tela Cheia' toggle in the 'Mais Opções' menu. Navigation plan: Start at the homepage (worklist table) → Open the third patient record → Access the image viewer → Use the 'Mais Opções' menu to capture all required screenshots in sequence. UI State Requirements: Ensure the 'Mais Opções' menu is open and respective submenus or states are visible for each screenshot. Target Language Element Mapping: 1) 'Mais Opções' = 'More Options' (menu de 3 pontos). 2) 'Alternâncias' = 'Toggles'. 3) 'Sobreposição' = 'Overlay'. 4) 'Vincular Séries' = 'Link Series'. 5) 'Download' = 'Download'. 6) 'Configurações' = 'Settings'. 7) 'Abrir em Janela Separada' = 'Open in Separate Window'. 8) 'Modo Tela Cheia' = 'Fullscreen Mode'. Sequence Optimization: Group screenshots by their location in the 'Mais Opções' menu to minimize redundant navigation.",
+  "instructions": "1. Locate the worklist table ('Lista de Trabalho') displayed in the center of the homepage. Find the third patient record row in the worklist table and click on the patient name link to open the wheel interface. 2. Wait until the wheel interface ('Roda de Ferramentas') loads completely with all available options visible around the circular menu. 3. Locate the 'Image Viewer' ('Visor de Imagens') button on the wheel interface — it appears as an image/picture icon in the wheel menu — and click on it. 4. Wait until the image viewer interface loads, displaying the toolbar at the top and the viewport with medical images. 5. Locate the 'Mais Opções' ('More Options') menu in the toolbar — it appears as a 3-dot icon in the top-right corner — and click on it to expand the menu. 6. Ensure the 'Mais Opções' menu is fully visible with all its options displayed. Take a screenshot of the complete menu, showing options like 'Imprimir', 'Copiar para a Área de Transferência', and 'Gravar Estudo'. Save as ./img_as/mo1_E.png. 7. Locate the 'Alternâncias' ('Toggles') section within the 'Mais Opções' menu and click on it to expand the submenu. 8. Ensure the 'Alternâncias' submenu is fully visible with all toggles displayed, including 'Sobreposição', 'Linhas Scout', 'Pilha Unificada', and 'Régua Calibrada'. Take a screenshot of the submenu, showing these toggles. Save as ./img_as/mo2_E.png. 9. Locate the 'Sobreposição' ('Overlay') toggle within the 'Alternâncias' submenu. Ensure it is fully visible. Take a screenshot highlighting this specific toggle. Save as ./img_as/mo3_E.png. 10. Navigate back to the 'Mais Opções' menu by clicking outside the 'Alternâncias' submenu. Locate the 'Vincular Séries' ('Link Series') section in the menu and click on it to expand the options. 11. Ensure the 'Vincular Séries' options are fully visible, including 'Desvincular', 'Vinculação Manual', and 'Vinculação por Plano'. Take a screenshot of this section. Save as ./img_as/mo4_E.png. 12. Navigate back to the 'Mais Opções' menu. Locate the 'Download' section and click on it to expand the options. 13. Ensure the 'Download' options are fully visible, including 'Baixar Imagem' and 'Baixar Estudo'. Take a screenshot of this section. Save as ./img_as/mo5_E.png. 14. Navigate back to the 'Mais Opções' menu. Locate the 'Configurações' ('Settings') section and click on it to expand the options. 15. Ensure the 'Configurações' section is fully visible, showing multiple subsections like 'Protocolos de Suspensão', 'Personalizando Sobreposição', and 'Personalizando a Barra de Ferramentas'. Take a screenshot of this section. Save as ./img_as/mo6-1_E.png. 16. Scroll down within the 'Configurações' section to locate additional options like 'Abrir Automaticamente o Explorador de Estudos', 'Redefinir Ferramentas de Marcação', and 'Ocultar Automaticamente o Menu do Viewport'. Ensure these options are fully visible. Take a screenshot of this section. Save as ./img/More%20Settings.png. 17. Navigate back to the 'Mais Opções' menu. Locate the 'Abrir em Janela Separada' ('Open in Separate Window') option. Ensure it is fully visible. Take a screenshot of this option. Save as ./img_as/mo7_E.png. 18. Navigate back to the 'Mais Opções' menu. Locate the 'Modo Tela Cheia' ('Fullscreen Mode') toggle. Ensure it is fully visible. Take a screenshot of this toggle. Save as ./img_as/mo8_E.png. Based on the instructions executed, if you think some screenshot taken is not right, redo the process to get that screenshot."
+}
+```
+
+-------- Code Generation Prompt --------
+You are an expert Playwright AI assistant. Generate 1-2 lines of Playwright TypeScript code for the NEXT action only.
+
+### Context Provided:
+- Current Page URL & Screenshot
+- Visible HTML: Indexed interactive elements with state tags
+- Executed Code History
+- Previous Error (if any)
+- User Script: Complete list of automation steps
+
+### Output Format:
+JSON with "thinking", "code", and "screenshotIntent" (screenshots only)
+
+### Critical Rules:
+
+**1. Element Selection (Priority Order):**
+  1. page.getByTestId('id')
+  2. page.getByRole('button', { name: 'Text' })
+  3. page.getByLabel('Text')
+  4. page.getByText('Text', { exact: true })
+
+**2. Uniqueness - NEVER use .first(), .last(), or :nth-child()**
+  - Scope from stable parent if needed: page.getByTestId('parent').getByRole('button', { name: 'Click' })
+
+**3. Speed & Reliability:**
+  - ALL clicks MUST use { force: true }
+  - NEVER use page.waitForTimeout()
+  - NO timeout options on actions
+  - Trust Playwright's auto-waiting
+
+**4. State Tags (check these before acting):**
+  - (expanded/collapsed), (checked/unchecked), (selected), (current-page)
+  - (menu-open/menu-closed), (pressed), (focused), (invalid), (required)
+
+**5. State Logic - CRITICAL FOR AVOIDING LOOPS:**
+  - **If instruction asks to achieve a state AND element already shows that state → SKIP to next instruction**
+  - Example: "Expand menu" + element shows (expanded) → Skip, move to next step
+  - Example: "Select Dashboard" + link shows (current-page) → Skip, move to next step
+  - **Only perform action if current state ≠ desired state**
+
+**6. Actions:**
+  - Click: await locator.click({ force: true });
+  - Type: await locator.fill('text');
+  - Verify: await locator.isVisible(); OR await locator.waitFor({ state: 'visible', timeout: 30000 });
+  - NO expect() assertions
+
+**7. Screenshots:**
+  - Use stable containers (testid/role/label), NOT getByText
+  - MUST include "screenshotIntent" field explaining what and why
+  - Prefer larger containers over individual elements
+
+**8. Error Recovery:**
+  - If Previous Error exists, selector was wrong
+  - Use more stable locator from hierarchy
+  - DO NOT repeat failed code
+
+**9. Smart Discovery:**
+  - Element not found? Check if hidden in dropdown/menu/collapsed section
+  - Click nearby elements to reveal target
+  - If impossible after attempts, skip to next instruction
+
+**10. Thinking Structure:**
+Write concise thinking that covers:
+  - Current instruction & what it asks
+  - Previous step context (if not first step)
+  - Element state check (does it match desired state?)
+  - Decision (action to take OR skip if state achieved)
+
+### Examples:
+
+**First Step:**
+{
+  "thinking": "Current instruction: 'Click the Add button'. This is the first step. Visible HTML shows button with role='button' and name='Add', no disabled state. Will click to proceed.",
+  "code": "await page.getByRole('button', { name: 'Add' }).click({ force: true });"
+}
+
+**State Check - Navigation:**
+{
+  "thinking": "Current instruction: 'Select Dashboard in sidebar'. Previous: Clicked Add button. Dashboard link does NOT have (current-page) tag, so not currently selected. Will click Dashboard link.",
+  "code": "await page.getByRole('link', { name: 'Dashboard' }).click({ force: true });"
+}
+
+**State Already Achieved - SKIP:**
+{
+  "thinking": "Current instruction: 'Expand Settings menu'. Previous: Navigated to admin panel. Settings menuitem shows (expanded) state - already in desired state. Skipping to next instruction: 'Click User Management'.",
+  "code": "await page.getByRole('menuitem', { name: 'User Management' }).click({ force: true });"
+}
+
+**State Already Achieved - Menu:**
+{
+  "thinking": "Current instruction: 'Click More Options menu icon again'. Element 15 with testid='MoreVertOutlinedIcon' shows (menu-open). Menu is already open, desired state achieved. Moving to next instruction: 'Click Save Settings'.",
+  "code": "await page.getByRole('button', { name: 'Save Settings' }).click({ force: true });"
+}
+
+**Screenshot:**
+{
+  "thinking": "Current instruction: 'Screenshot user profile section'. Previous: Navigated to profile. Visible HTML has testid='user-profile-section' as stable container. Will capture this section.",
+  "screenshotIntent": "Capturing user profile section to verify demographic fields and settings layout for validation.",
+  "code": "await page.getByTestId('user-profile-section').screenshot({ path: 'user-profile.png' });"
+}
+
+### Key to Avoid Loops:
+**Before generating code, ask: "Is the element already in the desired state?" If YES, skip to next instruction in user script.**
+
+-------- Context --------
+Page URL: https://team-meta-apim.azure-api.net/home
+
+Previously Executed Code:
+await page.locator('[data-testid="patient-name"]').nth(2).click({ force: true, timeout: 20000 });
+await page.getByTestId('study-icon').waitFor({ state: 'visible' });
+await page.getByTestId('study-icon').waitFor({ state: 'visible' });
+await page.getByTestId('study-icon').waitFor({ state: 'visible' });
+await page.getByTestId('study-icon').waitFor({ state: 'visible' });
+await page.getByTestId('study-icon').waitFor({ state: 'visible' });
+
+Current Step Error Code:
+None
+
+Previous Step Thinking:
+Current instruction: 'Wait until the wheel interface loads completely with all available options visible around the circular menu.' Previous step clicked the third patient name to open the wheel interface. The 'study-icon' testid already indicates the wheel interface is visible. Need to verify if all options around the circular menu are fully visible before proceeding.

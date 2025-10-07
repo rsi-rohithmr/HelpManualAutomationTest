@@ -1,0 +1,16 @@
+{
+	"active": true,
+	"code": "001HATEST",
+	"display": "HA TEST 001",
+	"rvuTechnical": "300",
+	"rvuProfessional": "400",
+	"billable": true,
+	"priorAuthorization": true,
+	"isActive": true,
+	"resourceType": "ProcedureCode",
+	"organization": {
+		"id": "6908268",
+		"reference": "/Organization/6908268",
+		"display": "DEFAULT TEST ORG595857"
+	}
+}

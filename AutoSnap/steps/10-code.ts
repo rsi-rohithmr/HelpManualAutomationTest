@@ -1,0 +1,1 @@
+await page.getByTestId('MoreVertOutlinedIcon').click({ force: true, timeout: 20000 });

@@ -1,0 +1,4 @@
+(function (operationJson,imagingStudyJson,patientJson,encounterJson,serviceRequestJson,organizationJson,practitionerJson)
+{
+	console.log('Test workflow script update1');
+});

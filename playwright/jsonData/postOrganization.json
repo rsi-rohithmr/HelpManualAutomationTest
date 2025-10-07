@@ -1,0 +1,129 @@
+{
+	"id": "bundle-transaction",
+	"resourceType": "Bundle",
+	"type": "transaction",
+	"entry": [
+		{
+			"request": {
+				"method": "POST",
+				"url": "/Organization/"
+			},
+			"fullUrl": "urn:uuid5bf65cae-c113-4745-9d1e-09c6ac1759f7",
+			"resource": {
+				"active": true,
+				"type": [
+					{
+						"coding": [
+							{
+								"code": "PROV",
+								"display": "Healthcare Provider"
+							}
+						]
+					}
+				],
+				"extension": [
+					{
+						"url": "http://www.ramsoft.com/fhir/StructureDefinition/taxId",
+						"valueString": ""
+					},
+					{
+						"url": "http://www.ramsoft.com/fhir/StructureDefinition/timezone",
+						"valueString": ""
+					},
+					{
+						"url": "http://www.ramsoft.com/fhir/StructureDefinition/practiceType",
+						"extension": [
+							{
+								"url": "text",
+								"valueString": "Imaging"
+							},
+							{
+								"url": "text",
+								"valueString": "Reading"
+							},
+							{
+								"url": "text",
+								"valueString": "Transcription"
+							}
+						]
+					},
+					{
+						"url": "http://www.ramsoft.com/fhir/extension/organization/isManaging",
+						"valueBoolean": false
+					}
+				],
+				"telecom": [
+					{
+						"system": "phone",
+						"value": "2125551234",
+						"use": "work",
+						"rank": 1,
+						"extension": []
+					},
+					{
+						"rank": 2,
+						"phantom": true,
+						"ramsoftId": "-13",
+						"system": "email",
+						"use": "direct",
+						"value": "directemail@abc.com",
+						"extension": [
+							{
+								"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"rank": 3,
+						"phantom": true,
+						"ramsoftId": "-14",
+						"system": "fax",
+						"use": "",
+						"value": "+1 212 555 3333",
+						"extension": []
+					},
+					{
+						"rank": 4,
+						"phantom": true,
+						"ramsoftId": "-18",
+						"system": "url",
+						"use": "",
+						"value": "https://ramsoft.com",
+						"extension": []
+					}
+				],
+				"address": [
+					{
+						"line": [
+							"299 Doon Valley Dr"
+						],
+						"city": "Kitchener",
+						"state": "ON",
+						"postalCode": "N2P 1K8",
+						"country": "CANADA",
+						"latitude": 43.3921301,
+						"longitude": -80.43087
+					}
+				],
+				"partOf": {
+					"id": "20739",
+					"reference": "/Organization/20739",
+					"display": "RAMSOFT INTERNAL"
+				},
+				"corporateWebsite": "",
+				"practiceTypeArray": [
+					"Imaging",
+					"Reading",
+					"Transcription"
+				],
+				"name": "HA TEST ORG JUNE2",
+				"identifier": [
+					{}
+				],
+				"update": true,
+				"resourceType": "Organization"
+			}
+		}
+	]
+}

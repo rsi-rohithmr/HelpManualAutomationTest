@@ -1,0 +1,172 @@
+{
+	"resourceType": "HealthcareService",
+	"id": "52254",
+	"meta": {
+		"extension": [
+			{
+				"url": "http://www.ramsoft.com/fhir/StructureDefinition/lastUpdateUser",
+				"valueReference": {
+					"id": "633061",
+					"reference": "Practitioner/633061",
+					"display": "RAMSOFTLOCAL^USER02"
+				}
+			}
+		],
+		"versionId": "182808364",
+		"lastUpdated": "2024-11-28T09:19:19.3275365+00:00"
+	},
+	"extension": [
+		{
+			"extension": [
+				{
+					"url": "text",
+					"valueCode": "CT"
+				}
+			],
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/modality"
+		},
+		{
+			"url": "Duration",
+			"valueInteger": 10
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/extension/healthcareservice/color",
+			"valueString": "#66AA99"
+		},
+		{
+			"url": "http://www.ramsoft.com/fhir/StructureDefinition/overBooking",
+			"valueBoolean": true
+		}
+	],
+	"identifier": [
+		{
+			"type": {
+				"coding": [
+					{
+						"code": "NPI",
+						"display": "NPI"
+					}
+				]
+			},
+			"value": "6380536199"
+		},
+		{
+			"type": {
+				"coding": [
+					{
+						"code": "NPI",
+						"display": "NPI"
+					}
+				]
+			},
+			"value": "6380536199"
+		}
+	],
+	"active": true,
+	"providedBy": {
+		"id": "2708300",
+		"extension": [
+			{
+				"url": "http://www.ramsoft.com/fhir/extension/organization/managingOrganization",
+				"valueReference": {
+					"id": "2708300",
+					"reference": "Organization/2708300",
+					"display": "E2E MANAGING ORG278755"
+				}
+			},
+			{
+				"url": "http://www.ramsoft.com/fhir/extension/organization/isManaging",
+				"valueBoolean": true
+			},
+			{
+				"url": "http://www.ramsoft.com/fhir/extension/organization/practiceType",
+				"valueString": "Imaging"
+			},
+			{
+				"url": "http://www.ramsoft.com/fhir/extension/organization/organizationType",
+				"valueCoding": {
+					"code": "PROV",
+					"display": "Healthcare Provider"
+				}
+			},
+			{
+				"url": "http://www.ramsoft.com/fhir/extension/organization/address",
+				"valueAddress": {
+					"line": [
+						"Jersey City Blvd"
+					],
+					"city": "Jersey City Boulevard",
+					"state": "NJ",
+					"postalCode": "07305",
+					"country": "UNITED STATES"
+				}
+			},
+			{
+				"url": "http://www.ramsoft.com/fhir/StructureDefinition/phone",
+				"valueString": "+905896655"
+			},
+			{
+				"url": "http://www.ramsoft.com/fhir/StructureDefinition/timezone",
+				"valueString": "Eastern Standard Time"
+			},
+			{
+				"url": "http://www.ramsoft.com/fhir/StructureDefinition/timezoneIANA",
+				"valueString": "America/New_York"
+			}
+		],
+		"reference": "Organization/2708300",
+		"display": "E2E MANAGING ORG278755"
+	},
+	"name": "healthcare-abc",
+	"availableTime": [
+		{
+			"daysOfWeek": [
+				"mon"
+			],
+			"availableStartTime": "00:00:00",
+			"availableEndTime": "23:59:00"
+		},
+		{
+			"daysOfWeek": [
+				"tue"
+			],
+			"availableStartTime": "00:00:00",
+			"availableEndTime": "23:59:00"
+		},
+		{
+			"daysOfWeek": [
+				"wed"
+			],
+			"availableStartTime": "00:00:00",
+			"availableEndTime": "23:59:00"
+		},
+		{
+			"daysOfWeek": [
+				"thu"
+			],
+			"availableStartTime": "00:00:00",
+			"availableEndTime": "23:59:00"
+		},
+		{
+			"daysOfWeek": [
+				"fri"
+			],
+			"availableStartTime": "00:00:00",
+			"availableEndTime": "23:59:00"
+		},
+		{
+			"daysOfWeek": [
+				"sat"
+			],
+			"availableStartTime": "00:00:00",
+			"availableEndTime": "23:59:00"
+		},
+		{
+			"daysOfWeek": [
+				"sun"
+			],
+			"availableStartTime": "00:00:00",
+			"availableEndTime": "23:59:00"
+		}
+	]
+}

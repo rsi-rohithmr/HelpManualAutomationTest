@@ -1,0 +1,123 @@
+{
+	"entry": [
+		{
+			"fullUrl": "urn:uuidbfbc3a70-e5eb-4012-bd35-18c965e5de46",
+			"request": {
+				"method": "POST",
+				"url": "/Practitioner/"
+			},
+			"resource": {
+				"name": [
+					{
+						"given": [
+							"NGUYEN"
+						],
+						"family": "RFERRR",
+						"text": "RFERRR^NGUYEN",
+						"suffix": [],
+						"prefix": []
+					}
+				],
+				"gender": "male",
+				"extension": [
+					{
+						"url": "http://www.ramsoft.com/fhir/extension/practitioner/LoginName",
+						"valueString": "nguyen0408250@yopmail.com"
+					},
+					{
+						"url": "http://www.ramsoft.com/fhir/extension/practitioner/isUserActive",
+						"valueBoolean": true
+					},
+					{
+						"url": "DEA",
+						"valueString": ""
+					},
+					{
+						"url": "Specialty",
+						"valueReference": {
+							"display": "",
+							"id": "",
+							"reference": ""
+						}
+					},
+					{
+						"url": "http://www.ramsoft.com/fhir/extension/practitioner/imageviewerurl",
+						"valueString": ""
+					},
+					{
+						"url": "http://www.ramsoft.com/fhir/extension/practitioner/documentviewerurl",
+						"valueString": ""
+					}
+				],
+				"identifier": [
+					{
+						"value": "",
+						"system": "",
+						"type": {
+							"coding": [
+								{
+									"system": "http://hl7.org/fhir/ValueSet/identifier-type",
+									"code": "NPI"
+								}
+							]
+						},
+						"use": "usual"
+					}
+				],
+				"address": [
+					{
+						"city": "",
+						"country": "",
+						"line": [],
+						"postalCode": "",
+						"state": ""
+					}
+				],
+				"active": true,
+				"birthDate": null,
+				"resourceType": "Practitioner"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid7efc291f-6945-4f11-8dca-a629655f5402",
+			"request": {
+				"method": "POST",
+				"url": "/PractitionerRole/"
+			},
+			"resource": {
+				"active": true,
+				"extension": [
+					{
+						"url": "http://www.ramsoft.com/fhir/StructureDefinition/role",
+						"valueReference": {
+							"id": "7143613",
+							"reference": "Role/7143613",
+							"display": "REFERRING PHYSICIAN"
+						}
+					},
+					{
+						"url": "http://www.ramsoft.com/fhir/extension/practitioner/studyPlayerType",
+						"valueCoding": {
+							"code": "1",
+							"display": "Referring Physician"
+						}
+					}
+				],
+				"organization": {
+					"display": "REF ORG7077",
+					"id": "7020857",
+					"identifier": "",
+					"reference": "Organization/7020857"
+				},
+				"practitioner": {
+					"display": "",
+					"reference": "urn:uuidbfbc3a70-e5eb-4012-bd35-18c965e5de46"
+				},
+				"resourceType": "PractitionerRole"
+			}
+		}
+	],
+	"id": "bundle-transaction",
+	"resourceType": "bundle",
+	"type": "transaction"
+}

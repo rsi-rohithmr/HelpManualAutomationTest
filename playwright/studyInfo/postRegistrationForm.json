@@ -1,0 +1,70 @@
+{
+  "resourceType": "BlumeForm",
+  "name": "Patient Registration Form 1234567890",
+  "description": "",
+  "organizationId": "3083279",
+  "organizationName": "AON MANAGING TEST ORG",
+  "version": "1.0.0",
+  "type": "registration",
+  "status": "published",
+  "created": "2024-04-29T08:13:05.369Z",
+  "createdBy": {
+    "id": "633061",
+    "display": "USER02 RAMSOFTLOCAL"
+  },
+  "lastUpdated": "2024-11-29T09:18:16.545Z",
+  "eligibility": {
+    "procedureCode": [],
+    "modality": [],
+    "role": []
+  },
+  "template": true,
+  "internal": false,
+  "formTemplate": {
+    "header": {
+      "title": "",
+      "description": "",
+      "banner": null,
+      "colour": "#3A6DF1",
+      "bannerImageDimension": {},
+      "logoImage": null
+    },
+    "content": [
+      [
+        {
+          "id": "question-1",
+          "type": "multipleChoice",
+          "question": "Question 1",
+          "required": true,
+          "key": "multipleChoice-0-0",
+          "description": "",
+          "multiselect": false,
+          "unique_id": "63ddbe21-e9e3-4b53-9d52-9e1dfb525241",
+          "shouldAutoOpen": true,
+          "options": [
+            {
+              "key": "145",
+              "description": "Option 1",
+              "type": "multipleChoice"
+            },
+            {
+              "key": "152",
+              "description": "Option 2",
+              "type": "multipleChoice"
+            },
+            {
+              "key": "other",
+              "customField": true,
+              "description": "Other",
+              "type": "multipleChoice"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "pdfFileName": null,
+  "patientId": null,
+  "id": "94a8fc56-bb5a-4571-8179-29dd94eb4cff",
+  "lastModified": "2024-04-29T09:18:16"
+}

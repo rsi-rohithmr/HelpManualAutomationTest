@@ -1,0 +1,263 @@
+
+=====================
+Full Prompt for Step 4
+=====================
+
+-------- System Instruction --------
+You are a world-class Playwright code-generation expert, relentlessly focused on SPEED and ROBUSTNESS. Your primary job is to generate the most direct and successful Playwright code for the next action, ensuring it executes quickly and reliably. Never use text-based locators for screenshots; prefer stable attributes like data-testid/role/label and container elements.
+
+-------- Scenario Text --------
+```json
+{
+  "thinking": {
+    "Screenshots Analysis": [
+      {
+        "filename": "./img_as/mo1_E.png",
+        "description": "Shows the 'More Options' menu in the Image Viewer toolbar with various functionalities visible, including options for downloading studies, managing overlays, and linking series."
+      },
+      {
+        "filename": "./img_as/mo2_E.png",
+        "description": "Shows the 'Toggles' submenu from the 'More Options' menu with toggleable features like Overlay, Scout Lines, Unified Stack, and Calibrated Ruler."
+      },
+      {
+        "filename": "./img_as/mo3_E.png",
+        "description": "Shows the 'Overlay' toggle functionality with its state visible."
+      },
+      {
+        "filename": "./img_as/mo4_E.png",
+        "description": "Shows the 'Link Series' functionality in the 'More Options' menu with options like Manual Link, Unlink, and Plane-based Linking visible."
+      },
+      {
+        "filename": "./img_as/mo5_E.png",
+        "description": "Shows the 'Download' submenu from the 'More Options' menu with options for downloading the current image or entire study."
+      },
+      {
+        "filename": "./img_as/mo6-1_E.png",
+        "description": "Shows the 'Settings' menu with configurable categories like Suspension Protocols, Overlay Customization, Toolbar Customization, DICOM Header Tags, and others."
+      },
+      {
+        "filename": "./img/More%20Settings.png",
+        "description": "Shows additional settings options available under the 'More Settings' menu, including toggles for hiding the viewport menu and resetting annotation tools."
+      },
+      {
+        "filename": "./img_as/mo7_E.png",
+        "description": "Shows the 'Open in Separate Window' functionality from the 'More Options' menu."
+      },
+      {
+        "filename": "./img_as/mo8_E.png",
+        "description": "Shows the 'Full Screen Mode' toggle button in the 'More Options' menu with its state visible."
+      }
+    ],
+    "Navigation Planning": [
+      "Start from the homepage (Worklist).",
+      "Select the third patient record on the worklist to open the Wheel interface.",
+      "Navigate to the Image Viewer via the Wheel interface.",
+      "Access the 'More Options' menu in the Image Viewer toolbar to capture all related screenshots."
+    ],
+    "UI State Requirements": [
+      {
+        "filename": "./img_as/mo1_E.png",
+        "state": "Ensure the 'More Options' menu is open and fully visible in the toolbar."
+      },
+      {
+        "filename": "./img_as/mo2_E.png",
+        "state": "Ensure the 'Toggles' submenu in the 'More Options' menu is open and fully visible."
+      },
+      {
+        "filename": "./img_as/mo3_E.png",
+        "state": "Ensure the 'Overlay' toggle is visible and its current state is shown."
+      },
+      {
+        "filename": "./img_as/mo4_E.png",
+        "state": "Ensure the 'Link Series' submenu in the 'More Options' menu is open and fully visible."
+      },
+      {
+        "filename": "./img_as/mo5_E.png",
+        "state": "Ensure the 'Download' submenu in the 'More Options' menu is open and fully visible."
+      },
+      {
+        "filename": "./img_as/mo6-1_E.png",
+        "state": "Ensure the 'Settings' menu is open, showing all categories."
+      },
+      {
+        "filename": "./img/More%20Settings.png",
+        "state": "Ensure all additional settings options under 'More Settings' are visible."
+      },
+      {
+        "filename": "./img_as/mo7_E.png",
+        "state": "Ensure the 'Open in Separate Window' functionality is visible in the 'More Options' menu."
+      },
+      {
+        "filename": "./img_as/mo8_E.png",
+        "state": "Ensure the 'Full Screen Mode' toggle button is visible and its current state is shown."
+      }
+    ],
+    "Target Language Element Mapping": {
+      "Worklist": "Lista de Trabajo",
+      "Wheel interface": "Rueda de Herramientas",
+      "Image Viewer": "Visor de Imágenes",
+      "More Options": "Más Opciones",
+      "Toggles": "Alternancias",
+      "Link Series": "Vincular Series",
+      "Download": "Descargar",
+      "Settings": "Configuraciones",
+      "Overlay": "Superposición",
+      "Full Screen Mode": "Modo Pantalla Completa",
+      "Open in Separate Window": "Abrir en Ventana Separada"
+    },
+    "Sequence Optimization": [
+      "Group all screenshots related to the 'More Options' menu in the Image Viewer to minimize redundant navigation."
+    ]
+  },
+  "instructions": "1. Locate the 'Lista de Trabajo' table displayed in the center of the screen.\n2. Find the third patient record row in the 'Lista de Trabajo' table and click on the patient name link to open the 'Rueda de Herramientas'.\n3. Wait until the 'Rueda de Herramientas' interface loads completely with all available options visible around the circular menu.\n4. Locate the 'Visor de Imágenes' button in the 'Rueda de Herramientas' — it appears as an image/picture icon in the wheel menu — and click on it.\n5. Wait until the 'Visor de Imágenes' interface loads completely with the toolbar visible at the top.\n6. Locate the 'Más Opciones' button (menu de 3 puntos) in the toolbar — it appears as a three-dot icon near the right side of the toolbar — and click on it.\n7. Take a screenshot of the 'Más Opciones' menu showing all its functionalities like 'Descargar', 'Vincular Series', and 'Configuraciones'. Save as ./img_as/mo1_E.png.\n8. Locate the 'Alternancias' option in the 'Más Opciones' menu and click on it to open the 'Alternancias' submenu.\n9. Take a screenshot of the 'Alternancias' submenu showing toggles like 'Superposición', 'Líneas Scout', 'Pila Unificada', and 'Regla Calibrada'. Save as ./img_as/mo2_E.png.\n10. Locate the 'Superposición' toggle in the 'Alternancias' submenu and ensure its current state is visible.\n11. Take a screenshot of the 'Superposición' toggle showing its state. Save as ./img_as/mo3_E.png.\n12. Locate the 'Vincular Series' option in the 'Más Opciones' menu and click on it to open the 'Vincular Series' submenu.\n13. Take a screenshot of the 'Vincular Series' submenu showing options like 'Desvincular', 'Vinculación Manual', and 'Vinculación por Plano'. Save as ./img_as/mo4_E.png.\n14. Locate the 'Descargar' option in the 'Más Opciones' menu and click on it to open the 'Descargar' submenu.\n15. Take a screenshot of the 'Descargar' submenu showing options like 'Descargar Imagen' and 'Descargar Estudio'. Save as ./img_as/mo5_E.png.\n16. Locate the 'Configuraciones' option in the 'Más Opciones' menu and click on it to open the 'Configuraciones' menu.\n17. Take a screenshot of the 'Configuraciones' menu showing categories like 'Protocolos de Suspensión', 'Personalizando la Barra de Herramientas', and 'Tags de Cabeçalho DICOM'. Save as ./img_as/mo6-1_E.png.\n18. Scroll down in the 'Configuraciones' menu to reveal additional settings options.\n19. Take a screenshot of the additional settings options under 'Configuraciones'. Save as ./img/More%20Settings.png.\n20. Locate the 'Abrir en Ventana Separada' option in the 'Más Opciones' menu and ensure it is visible.\n21. Take a screenshot of the 'Abrir en Ventana Separada' functionality. Save as ./img_as/mo7_E.png.\n22. Locate the 'Modo Pantalla Completa' toggle button in the 'Más Opciones' menu and ensure its current state is visible.\n23. Take a screenshot of the 'Modo Pantalla Completa' toggle button showing its state. Save as ./img_as/mo8_E.png.\n24. Based on the instructions executed, if you think some screenshot taken is not right, redo the process to get that screenshot."
+}
+```
+
+-------- Code Generation Prompt --------
+You are an expert Playwright AI assistant. Generate 1-2 lines of Playwright TypeScript code for the NEXT action only.
+
+### Context Provided:
+- Current Page URL & Screenshot
+- Visible HTML: Indexed interactive elements with state tags
+- Executed Code History
+- Previous Error (if any)
+- User Script: Complete list of automation steps
+
+### Output Format:
+JSON with "thinking", "code", and "screenshotIntent" (screenshots only)
+
+### Critical Rules:
+
+**1. Element Selection (Priority Order):**
+  1. page.getByTestId('id')
+  2. page.getByRole('button', { name: 'Text' })
+  3. page.getByLabel('Text')
+  4. page.getByText('Text', { exact: true })
+
+**2. Uniqueness - NEVER use .first(), .last(), or :nth-child()**
+  - Scope from stable parent if needed: page.getByTestId('parent').getByRole('button', { name: 'Click' })
+
+**3. Speed & Reliability:**
+  - ALL clicks MUST use { force: true }
+  - NEVER use page.waitForTimeout()
+  - NO timeout options on actions
+  - Trust Playwright's auto-waiting
+
+**4. State Tags (check these before acting):**
+  - (expanded/collapsed), (checked/unchecked), (selected), (current-page)
+  - (menu-open/menu-closed), (pressed), (focused), (invalid), (required)
+
+**5. State Logic - CRITICAL FOR AVOIDING LOOPS:**
+  - **If instruction asks to achieve a state AND element already shows that state → SKIP to next instruction**
+  - Example: "Expand menu" + element shows (expanded) → Skip, move to next step
+  - Example: "Select Dashboard" + link shows (current-page) → Skip, move to next step
+  - **Only perform action if current state ≠ desired state**
+
+**6. Actions:**
+  - Click: await locator.click({ force: true });
+  - Type: await locator.fill('text');
+  - Verify: await locator.isVisible(); OR await locator.waitFor({ state: 'visible', timeout: 30000 });
+  - NO expect() assertions
+
+**7. Screenshots:**
+  - Use stable containers (testid/role/label), NOT getByText
+  - MUST include "screenshotIntent" field explaining what and why
+  - Prefer larger containers over individual elements
+
+**8. Error Recovery:**
+  - If Previous Error exists, selector was wrong
+  - Use more stable locator from hierarchy
+  - DO NOT repeat failed code
+
+**9. Smart Discovery:**
+  - Element not found? Check if hidden in dropdown/menu/collapsed section
+  - Click nearby elements to reveal target
+  - If impossible after attempts, skip to next instruction
+
+**10. Thinking Structure:**
+Write concise thinking that covers:
+  - Current instruction & what it asks
+  - Previous step context (if not first step)
+  - Element state check (does it match desired state?)
+  - Decision (action to take OR skip if state achieved)
+
+### Examples:
+
+**First Step:**
+{
+  "thinking": "Current instruction: 'Click the Add button'. This is the first step. Visible HTML shows button with role='button' and name='Add', no disabled state. Will click to proceed.",
+  "code": "await page.getByRole('button', { name: 'Add' }).click({ force: true });"
+}
+
+**State Check - Navigation:**
+{
+  "thinking": "Current instruction: 'Select Dashboard in sidebar'. Previous: Clicked Add button. Dashboard link does NOT have (current-page) tag, so not currently selected. Will click Dashboard link.",
+  "code": "await page.getByRole('link', { name: 'Dashboard' }).click({ force: true });"
+}
+
+**State Already Achieved - SKIP:**
+{
+  "thinking": "Current instruction: 'Expand Settings menu'. Previous: Navigated to admin panel. Settings menuitem shows (expanded) state - already in desired state. Skipping to next instruction: 'Click User Management'.",
+  "code": "await page.getByRole('menuitem', { name: 'User Management' }).click({ force: true });"
+}
+
+**State Already Achieved - Menu:**
+{
+  "thinking": "Current instruction: 'Click More Options menu icon again'. Element 15 with testid='MoreVertOutlinedIcon' shows (menu-open). Menu is already open, desired state achieved. Moving to next instruction: 'Click Save Settings'.",
+  "code": "await page.getByRole('button', { name: 'Save Settings' }).click({ force: true });"
+}
+
+**Screenshot:**
+{
+  "thinking": "Current instruction: 'Screenshot user profile section'. Previous: Navigated to profile. Visible HTML has testid='user-profile-section' as stable container. Will capture this section.",
+  "screenshotIntent": "Capturing user profile section to verify demographic fields and settings layout for validation.",
+  "code": "await page.getByTestId('user-profile-section').screenshot({ path: 'user-profile.png' });"
+}
+
+### Key to Avoid Loops:
+**Before generating code, ask: "Is the element already in the desired state?" If YES, skip to next instruction in user script.**
+
+-------- Context --------
+Page URL: https://team-meta-apim.azure-api.net/imageviewer3d?StudyId=1008&StudyInstanceUIDs=1.2.124.113540.1.2.14130.16949.14387.14660&PatientInfo=1928&IssuerOfPatientID=RAMSOFT&PatientID=1928&internalManagingOrganizationID=1
+
+Previously Executed Code:
+await page.getByText('BLUMEPAT, LNGO MS08', { exact: true }).click({ force: true, timeout: 20000 });
+await page.getByTestId('study-icon').waitFor({ state: 'visible' });
+await page.getByTestId('imageviewer-icon').click({ force: true, timeout: 20000 });
+
+Current Step Error Code:
+locator.click: Timeout 20000ms exceeded.
+Call log:
+[2m  - waiting for getByTestId('toolbar-menu')[22m
+
+    at eval (<anonymous>:3:62)
+    at eval (<anonymous>:3:104)
+    at executeCode (C:\Users\Rohith.MR\test\HelpManualAutomationTest\AutoSnap\tracewrightt\dist\js\page_helpers.js:69:19)
+    at performStep (C:\Users\Rohith.MR\test\HelpManualAutomationTest\AutoSnap\tracewrightt\dist\js\step.js:95:15)
+    at run (C:\Users\Rohith.MR\test\HelpManualAutomationTest\AutoSnap\tracewrightt\dist\js\run.js:50:38)
+    at async file:///C:/Users/Rohith.MR/test/HelpManualAutomationTest/AutoSnap/test-enhanced-flow.js:2462:13
+
+locator.click: Timeout 20000ms exceeded.
+Call log:
+[2m  - waiting for getByTestId('toolbar-menu')[22m
+
+    at eval (<anonymous>:3:62)
+    at eval (<anonymous>:3:104)
+    at executeCode (C:\Users\Rohith.MR\test\HelpManualAutomationTest\AutoSnap\tracewrightt\dist\js\page_helpers.js:69:19)
+    at performStep (C:\Users\Rohith.MR\test\HelpManualAutomationTest\AutoSnap\tracewrightt\dist\js\step.js:95:15)
+    at run (C:\Users\Rohith.MR\test\HelpManualAutomationTest\AutoSnap\tracewrightt\dist\js\run.js:50:38)
+    at async file:///C:/Users/Rohith.MR/test/HelpManualAutomationTest/AutoSnap/test-enhanced-flow.js:2462:13
+
+locator.click: Timeout 20000ms exceeded.
+Call log:
+[2m  - waiting for getByTestId('imageviewer-icon')[22m
+
+    at eval (<anonymous>:3:66)
+    at eval (<anonymous>:3:108)
+    at executeCode (C:\Users\Rohith.MR\test\HelpManualAutomationTest\AutoSnap\tracewrightt\dist\js\page_helpers.js:69:19)
+    at performStep (C:\Users\Rohith.MR\test\HelpManualAutomationTest\AutoSnap\tracewrightt\dist\js\step.js:95:15)
+    at run (C:\Users\Rohith.MR\test\HelpManualAutomationTest\AutoSnap\tracewrightt\dist\js\run.js:50:38)
+    at async file:///C:/Users/Rohith.MR/test/HelpManualAutomationTest/AutoSnap/test-enhanced-flow.js:2462:13
+
+Previous Step Thinking:
+Current instruction: 'Wait until the Rueda de Herramientas interface loads completely with all available options visible around the circular menu.' Previous step clicked the third patient record to open the Rueda de Herramientas. Visible HTML shows the 'study-icon' with testid and it is already in the visible state. Desired state achieved. Skipping to next instruction: 'Locate the Visor de Imágenes button in the Rueda de Herramientas and click on it.'

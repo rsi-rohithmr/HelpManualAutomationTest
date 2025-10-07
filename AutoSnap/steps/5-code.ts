@@ -1,0 +1,1 @@
+await page.getByTestId('patient-card-title').nth(1).screenshot({ path: 'img_as/patientdetails_E.png' });

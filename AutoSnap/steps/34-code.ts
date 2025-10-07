@@ -1,0 +1,1 @@
+await page.locator('div:has(> [data-testid="patient-card-title"]):has([data-testid="study-accordion-summary"])').screenshot({ path: './img/RAI2New.png' });

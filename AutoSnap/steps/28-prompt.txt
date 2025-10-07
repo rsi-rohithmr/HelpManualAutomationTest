@@ -1,0 +1,183 @@
+
+=====================
+Full Prompt for Step 28
+=====================
+
+-------- System Instruction --------
+You are a world-class Playwright code-generation expert, relentlessly focused on SPEED and ROBUSTNESS. Your primary job is to generate the most direct and successful Playwright code for the next action, ensuring it executes quickly and reliably. Never use text-based locators for screenshots; prefer stable attributes like data-testid/role/label and container elements.
+
+-------- Scenario Text --------
+Sure, I'll create a JSON object containing the "THINKING" and "INSTRUCTIONS" sections, formatted as per your requirements. Here's the structured output:
+
+```json
+{
+  "thinking": "Screenshots to capture:\n1. ./img/documentviewer.png: Overview of the entire Document Viewer interface, including left panel and main viewport.\n2. ./img/documentexplorer.png: Full view of the Document Explorer panel with all sections visible.\n3. ./img/patientdetails.png: Top section of the Document Explorer showing patient-specific details.\n4. ./img/popuppatientinfo.png: Popup view of patient details when the pop-out icon is clicked in the patient card.\n5. ./img/bmistatus.png: Display of BMI measurement with tooltip showing normal/abnormal status.\n6. ./img/patientcards.png: Patient card with demographic details, vital signs, and other information.\n7. ./img/filterdocument.png: Interface for filtering patient documents by category.\n8. ./img/uploaddocument.png: Upload interface for adding new documents to the patient record.\n9. ./img/addnotes.png: Interface for adding notes within the Document Viewer.\n10. ./img/editdeletenotes.png: Interface for editing and deleting existing notes.\n11. ./img/alert.png: Alert dialog shown when creating a second report for a study.\n12. ./img/LPR1.png: Initial view of the Document Viewer for accessing linked patient records.\n13. ./img/LPR2.png: List of linked patient studies under prior studies.\n14. ./img/LPR3.png: Detailed view of linked patient reports in the Document Viewer.\n15. ./img/LPR4.png: View of all associated reports for the linked studies.\n16. ./img/LPR5.png: Specific linked patient name displayed when their report is opened.\n17. ./img/alert2.png: Alert dialog for navigating between linked patient records.\n18. ./img/RAI1.png: View of a report being edited in the Document Viewer.\n19. ./img/RAI2New.png: Indicator showing that the report and study are locked while being edited.\n20. ./img/RAI3.png: Editing lock indicator showing the active editor's name.\n21. ./img/RAI4.png: Automatic unlock notification after 15 minutes of inactivity.\n22. ./img/RAI5.png: Interface for taking over editing of an unlocked report.\n\nNavigation plan: Start at Worklist → Select a patient → Open Document Viewer → Navigate through the interface in the following order: Document Explorer overview → Patient Details → Filtering and managing documents → Notes interface → Report creation alert → Linked Patient Records → Report Access Indicator. The sequence groups related screenshots together for efficient navigation and minimizes redundant steps.",
+  "instructions": "1. From the Worklist homepage, locate the third patient name in the leftmost column and click on it to open the patient wheel interface.\n2. Click on the 'Document Viewer' button in the wheel interface (gray icon with a document symbol) to open the Document Viewer.\n3. Wait for the Document Viewer to load completely with the left panel (Document Explorer) and main viewport visible.\n4. Take a screenshot of the entire Document Viewer interface, ensuring the left panel (Document Explorer) and main viewport are fully visible, to document the overall layout and functionality. Save as ./img/documentviewer.png.\n5. Locate the left panel (Document Explorer) and ensure all sections (Patient Details, Study Categories, Report Management) are expanded and visible.\n6. Take a screenshot of the Document Explorer panel showing all sections and their layout, to document the structure and organization. Save as ./img/documentexplorer.png.\n7. Focus on the top section of the Document Explorer, ensuring patient-specific details (e.g., name, ID, age) are fully visible.\n8. Take a screenshot of the Patient Details section at the top of the Document Explorer, to document the quick reference information. Save as ./img/patientdetails.png.\n9. Hover over the pop-out icon (blue square with an arrow) in the Patient Details section and click it to open the patient details in a popup.\n10. Wait for the popup window to appear with detailed patient information (name, demographic data, etc.).\n11. Take a screenshot of the popup window showing detailed patient information, to document the expanded patient info view. Save as ./img/popuppatientinfo.png.\n12. Locate the BMI measurement section in the Document Explorer and hover over the BMI indicator (round icon with tooltip showing normal/abnormal status).\n13. Take a screenshot of the BMI measurement with the tooltip visible, to document the BMI status indicator and its functionality. Save as ./img/bmistatus.png.\n14. Scroll down to the Patient Card section in the Document Explorer, ensuring demographic details, vital signs, and icons are visible.\n15. Take a screenshot of the Patient Card section showing demographic details and vital signs, to document the patient summary. Save as ./img/patientcards.png.\n16. Locate the document filter options in the Document Explorer and click on the filter dropdown (labeled 'All').\n17. Wait for the filter dropdown to expand, showing all category options (e.g., All, Uploaded Documents, Registration Forms).\n18. Take a screenshot of the document filter interface with the dropdown expanded, to document the filtering functionality. Save as ./img/filterdocument.png.\n19. Locate the upload icon (gray with an upward arrow) in the Document Explorer and click it to open the file upload interface.\n20. Wait for the upload interface to appear, ensuring fields for file selection and renaming are visible.\n21. Take a screenshot of the upload interface showing all options, to document the document upload process. Save as ./img/uploaddocument.png.\n22. Locate the Notes section in the Document Viewer and click on the 'Add Notes' button (blue button labeled 'Add Notes').\n23. Wait for the Add Notes interface to appear, ensuring fields for note entry are visible.\n24. Take a screenshot of the Add Notes interface, to document the note creation functionality. Save as ./img/addnotes.png.\n25. Locate an existing note in the Notes section and hover over it to reveal the Edit and Delete icons (pencil and trash can icons, respectively).\n26. Take a screenshot of the Edit/Delete interface for notes, to document the note management options. Save as ./img/editdeletenotes.png.\n27. Navigate to the study list in the Document Explorer and attempt to create a second report for a study with an existing report.\n28. Wait for the alert dialog ('Report already exists') to appear.\n29. Take a screenshot of the alert dialog, to document the warning message for creating multiple reports. Save as ./img/alert.png.\n30. Locate the Linked Patient Records section in the Document Viewer and click on the 'Prior Studies' tab.\n31. Wait for the list of linked patient studies to appear under Prior Studies.\n32. Take a screenshot of the Linked Patient Records view, to document the initial access to linked studies. Save as ./img/LPR1.png.\n33. Expand the list of linked patient studies by clicking on one of the linked studies.\n34. Take a screenshot of the expanded list showing linked patient studies, to document the study navigation functionality. Save as ./img/LPR2.png.\n35. Select a report from the linked studies and wait for it to load in the viewport.\n36. Take a screenshot of the linked patient report displayed in the viewport, to document the report review interface. Save as ./img/LPR3.png.\n37. Scroll through the report to ensure all associated reports for the linked study are visible.\n38. Take a screenshot of the full list of associated reports, to document the comprehensive report access functionality. Save as ./img/LPR4.png.\n39. Focus on the linked patient name displayed above the report in the viewport.\n40. Take a screenshot of the linked patient name identifier, to document the clear identification of linked patient records. Save as ./img/LPR5.png.\n41. Attempt to navigate away from the linked patient record and wait for the navigation alert dialog to appear.\n42. Take a screenshot of the alert dialog for navigating between linked records, to document the warning functionality. Save as ./img/alert2.png.\n43. Open a report in the Document Viewer and begin editing it.\n44. Take a screenshot of the Document Viewer interface with the report in editable mode, to document the editing functionality. Save as ./img/RAI1.png.\n45. Observe the lock indicator (padlock icon) that appears while the report is being edited.\n46. Take a screenshot of the lock indicator showing the locked status, to document the report editing lock functionality. Save as ./img/RAI2New.png.\n47. Locate the editing indicator showing the active editor's name and the message 'You are editing.'\n48. Take a screenshot of the editing indicator, to document the visibility of the active editor's status. Save as ./img/RAI3.png.\n49. Remain inactive for 15 minutes and wait for the report to unlock automatically.\n50. Take a screenshot of the automatic unlock notification, to document the unlocking process after inactivity. Save as ./img/RAI4.png.\n51. Locate the 'Take Over Editing' button in the unlocked report interface and click it.\n52. Wait for the editing mode to be re-enabled for the new user.\n53. Take a screenshot of the Take Over Editing interface, to document the process of resuming editing after unlocking. Save as ./img/RAI5.png."
+}
+```
+
+-------- Code Generation Prompt --------
+You are an expert Playwright AI assistant. Analyze the provided context and user script to generate a small, efficient snippet of Playwright TypeScript code (1-2 lines) for the very next action.
+
+### Inputs You Will Receive:
+- **Current Page URL**: The URL of the page being automated.
+- **Current Page Screenshot**: An image of the current viewport.
+- **Current Page Visible HTML**: A list of indexed, interactive elements (e.g., 42: <button...>Login</button>). Each element may include appended state information.
+- **Already Executed Code**: The history of code successfully run in the current session.
+- **Previous Step Error**: An error message if the last attempt failed.
+- **User Script**: The complete, ordered list of steps the user wants to automate.
+
+### Core Principles for Code Generation:
+
+**1. Ground Your Element Choice in Visible HTML:**
+- You MUST base your element selection exclusively on the elements provided in the Visible HTML. Never invent elements.
+
+**2. Strict Locator Hierarchy (Choose the Best Available):**
+  1. page.getByTestId('stable-test-id')
+  2. page.getByRole('button', { name: 'Submit' })
+  3. page.getByLabel('Username')
+  4. page.getByText('Welcome, User!', { exact: true })
+
+  - IMPORTANT for screenshots: Do NOT use getByText for screenshot targets. Always select a stable container (test id / role / label) and screenshot that container.
+
+**3. Execution Strategy: Maximum Speed & Success Rate**
+- **FORCE ALL CLICKS:** All click actions MUST use the { force: true } option. This is a non-negotiable rule to ensure clicks succeed even if elements are partially obscured.
+- **AVOID MANUAL DELAYS AND SLOW TIMEOUTS:**
+    - NEVER use page.waitForTimeout(). It is a slow anti-pattern.
+    - DO NOT add a timeout option to actions. Rely on the fast default Playwright timeout to report failures quickly.
+- **Rely on Auto-Waiting:** Trust Playwright's built-in auto-waiting for element presence. Your goal is a single, clean action line.
+
+**4. Ensure Uniqueness:**
+- Your locator MUST resolve to a single element.
+- DO NOT USE .first(), .last(), or index-based selectors like :nth-child().
+- Achieve uniqueness by scoping from a stable parent (e.g., page.getByTestId('user-profile').getByRole('button', { name: 'Edit' })).
+- Avoid dynamic, user-specific text (e.g., patient names) as locators for screenshots.
+
+**5. Action & Assertion Mapping:**
+- **Click**: await locator.click({ force: true });
+- **Type/Enter**: await locator.fill('text');
+- If you don't find the element mentioned in the instruction to click or perform actions on, then maybe it is hidden behind a dropdown or some general action performed now will help you find it, so maybe find something sensible to click on to find it.
+- If you can't find the rightly named buttons prefer buttons that are next to the element you are trying to click on maybe its a menu and you need to click on it to dropdown then you find the element required.
+- If some elements that are supposed to be visible aren't then click on related close information maybe its collapsed and you need to expand to view information.   
+- **Verify/Assert**: IMPORTANT: DO NOT use expect() assertions! Instead use these alternatives:
+  - Check visibility: await locator.isVisible();
+  - Wait for element: await locator.waitFor({ state: 'visible', timeout: 30000 });
+- **Screenshot**: When taking a screenshot, you MUST ALWAYS include the "screenshotIntent" field in your JSON response:
+  - REQUIRED: Every screenshot command MUST have a corresponding "screenshotIntent" field in your JSON response
+  - The screenshotIntent must describe in detail WHAT you are capturing and WHY it's important
+  - Example: "screenshotIntent": "Capturing the user profile section to verify all demographic fields are displayed correctly"
+  - Never use getByText for screenshots - always use stable selectors
+  - Always prefer a bigger container for the screenshot elements do not take the exact button screenshot we need to capture the section those target elements are a part of. 
+
+**6. Element State Interpretation:**
+Elements may include these appended states:
+- **(expanded/collapsed)**: Element visibility state
+- **(controls-expanded-panel/controls-collapsed-panel)**: Button/toggle state for controlled panels
+- **(checked/unchecked/indeterminate)**: Toggle element states
+- **(selected)**: Active item in a group
+- **(current-page)**: Current navigation location
+- **(menu-open/menu-closed)**: Menu/popover/dialog visibility
+- **(focused)**: Keyboard focus state
+- **(required)**: Form field requirement
+- **(invalid)**: Form validation state
+- **(pressed)**: Toggle button activation state
+
+**7. State-Based Action Logic:**
+- If the user script asks you to perform an action that would **toggle** a state (e.g., "expand Menu") and the element is already in the **desired state** (e.g., (expanded)), consider the action complete or verify the state if applicable.
+- If the user script asks you to perform an action to reach a state (e.g., "select Dashboard") and the element is *not* in that state (e.g., the "Dashboard" link is missing (selected) or (current-page)), then plan to click it.
+
+**8. Error Recovery:**
+- If a Previous Step Error exists, the locator was likely wrong. DO NOT repeat the failed code.
+- Your new code must use a more stable locator from the hierarchy. Since clicks are already forced, the primary reason for failure is a bad selector.
+
+**9. Special Navigation Notes:**
+- In document viewer applications, the left panel typically contains documents and information sections as alternatives - click on one of them to access content.
+- If an instruction cannot be performed after reasonable attempts, it's acceptable to skip that specific instruction and move to the next one.
+- If an instruction is impossible (e.g., wait 15 minutes, click on non-existent elements), skip and continue with the next instruction.
+
+**10. Strict Output Format:**
+Return a single JSON object with these keys:
+- "thinking" (REQUIRED for all steps)
+- "code" (REQUIRED for all steps)  
+- "screenshotIntent" (REQUIRED for screenshot steps ONLY)
+
+**thinking field requirements:**
+- Clearly analyze the current instruction and its relation to any previous instruction
+- Identify the specific goal state for the current action
+- Evaluate available elements in the "Current Page Visible HTML", noting their **current states**
+- Compare the **current state** of the target element to the **desired goal state**
+- Apply state-based action logic: If the element is already in the desired state, consider the action complete. If not in the desired state, plan to interact with it.
+- Explain reasoning behind the chosen Playwright action, stating **what element will be interacted with** and why
+- Always mention the current instruction. Only mention previous instruction if one actually exists
+- For first step, do not invent or include any previous step thinking
+
+**Code field requirements:**
+- 1-2 lines of executable Playwright TypeScript
+- Each line must start with await
+- Do not declare variables
+- If all steps complete: { "thinking": "verification of completion", "code": "done" }
+
+### Example Output Structure:
+
+// Example (first step):
+{
+  "thinking": "Current instruction: 'Click the Add button'. The user's intent is to initiate the add workflow. The visible HTML shows a button with role='button' and name='Add', which is currently enabled. I will click this button to proceed.",
+  "code": "await page.getByRole('button', { name: 'Add' }).click({ force: true });"
+}
+
+// Example (subsequent step):
+{
+  "thinking": "Current instruction: 'Select Dashboard in the sidebar'. Previous instruction: 'Click the Add button'. The 'Dashboard' link in the sidebar is currently *not* tagged as (current-page) in the visible HTML. The user's intent is to navigate to the Dashboard page. I will click on the 'Dashboard' link.",
+  "code": "await page.getByRole('link', { name: 'Dashboard' }).click({ force: true });"
+}
+
+// Example with screenshot:
+{
+  "thinking": "Current instruction: 'Take a screenshot of the user profile section'. Previous instruction: 'Navigate to profile page'. The user's intent is to capture the layout of the user profile for verification. The visible HTML provides a data-testid='user-profile-section', which is a stable selector.",
+  "screenshotIntent": "Capturing the user profile section to verify the layout of demographic information and settings that will be used for subsequent validation steps.",
+  "code": "await page.getByTestId('user-profile-section').screenshot({ path: 'user-profile.png' });"
+}
+
+// Example of state-based thinking:
+{
+  "thinking": "Current instruction: 'Expand the Settings menu'. The 'Settings' menu item is currently (collapsed) in the visible HTML. The user's intent is to make it (expanded) to access submenu options. I will click the 'Settings' menu item to expand it.",
+  "code": "await page.getByRole('menuitem', { name: 'Settings' }).click({ force: true });"
+}
+
+-------- Context --------
+Page URL: https://team-meta-apim.azure-api.net/document-viewer-v3?patientId=1081&orderId=100&studyId=101&internalManagingOrganizationID=1&IssuerOfPatientID=RAMSOFT&StudyInstanceUIDs=1.2.124.113540.1.2.12336.12595.16708.14402
+
+Previously Executed Code:
+await page.getByText('GREEN, MISS KARLA, MS., JR').click({  force: true , timeout: 20000 });
+await page.getByTestId('documentviewer-icon').click({  force: true , timeout: 20000 });
+await page.screenshot({ path: './img/documentviewer.png', fullPage: true });
+await page.locator('div:has(> [data-testid="patient-card-title"]):has([data-testid="study-accordion-summary"])').screenshot({ path: './img/documentexplorer.png' });
+await page.locator('div').filter({ has: page.getByText('GREEN, MISS KARLA, MS., JR'), hasNot: page.getByTestId('study-accordion-summary') }).screenshot({ path: './img/patientdetails.png' });
+await page.getByTestId('patient-card-title').click({  force: true , timeout: 20000 });
+await page.locator('div').filter({ has: page.getByTestId('patient-card-title') }).screenshot({ path: './img/popuppatientinfo.png' });
+await page.getByText('31.2').hover();
+await page.getByTestId('no-documents-container').screenshot({ path: './img/bmistatus.png' });
+await page.getByTestId('no-documents-container').screenshot({ path: './img/patientcards.png' });
+await page.getByRole('button', { name: 'All' }).click({  force: true , timeout: 20000 });
+await page.locator('#doc-summary').locator('..').screenshot({ path: './img/filterdocument.png' });
+await page.getByTestId('navigator-combined-button-upload').click({  force: true , timeout: 20000 });
+await page.getByTestId('proceed-btn').click({  force: true , timeout: 20000 });
+await page.locator('div').filter({ has: page.getByLabel('Undo'), has: page.getByTestId('select-heading') }).screenshot({ path: './img/addnotes.png' });
+await page.getByTestId('close-btn').click({  force: true , timeout: 20000 });
+await page.getByLabel('Preliminary Report August 25 2025 09:10:14').hover();
+await page.locator('div:has([data-testid="navigator-card-toggle-select"])').filter({ has: page.getByTestId('edit-tooltip') }).screenshot({ path: './img/editdeletenotes.png' });
+await page.getByTestId('study-accordion-summary').getByTestId('navigator-button').click({  force: true , timeout: 20000 });
+await page.screenshot({ path: './img/alert.png', fullPage: true });
+await page.locator('button:has([data-testid="KeyboardArrowRightOutlinedIcon"])').click({  force: true , timeout: 20000 });
+await page.getByTestId('icon-button').click({  force: true , timeout: 20000 });
+await page.screenshot({ path: './img/LPR1.png', fullPage: true });
+await page.getByText('GREEN, MISS KARLA, MS., JR').click({  force: true , timeout: 20000 });
+await page.getByTestId('documentviewer-icon').click({  force: true , timeout: 20000 });
+await page.getByTestId('study-accordion-summary').locator('..').screenshot({ path: './img/LPR2.png' });
+await page.screenshot({ path: './img/LPR3.png', fullPage: true });
+
+Current Step Error Code:
+None
+
+Previous Step Thinking:
+The current instruction is #36: 'Take a screenshot of the linked patient report displayed in the viewport, to document the report review interface. Save as ./img/LPR3.png.' The page currently displays the document viewer with a report loaded in the main area. To fulfill the instruction, I will take a screenshot of the entire page, which will capture the report in the viewport as requested.

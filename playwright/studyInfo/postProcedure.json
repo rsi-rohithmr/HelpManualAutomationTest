@@ -1,0 +1,16 @@
+{
+	"isActive": true,
+	"code": "7005 Test",
+	"display": "Test Description",
+	"rvuTechnical": "400",
+	"rvuProfessional": "300",
+	"alertMessage": "Test Alert msg",
+	"critical": true,
+	"billable": false,
+	"officeVisit": true,
+	"organization": {
+		"id": "2220409",
+		"reference": "/Organization/2220409",
+		"display": "AIA MANAGING ORG590933"
+	}
+}

@@ -1,0 +1,1 @@
+await page.getByText('GREEN, MISS KARLA, MS., JR').click({  force: true , timeout: 20000 });

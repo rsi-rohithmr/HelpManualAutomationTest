@@ -1,0 +1,1 @@
+await page.getByRole('dialog').screenshot({ path: './img/alert.png' });

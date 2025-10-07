@@ -1,0 +1,1 @@
+await page.getByTestId('close-study-accordion').click({  force: true , timeout: 20000 });

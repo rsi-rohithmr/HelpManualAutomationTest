@@ -1,0 +1,22 @@
+{
+  "ResourceType": "Account",
+  "AccountName": "DEFAULT TEST ORG595857",
+  "ClientId": "616975H",
+  "Phone": "",
+  "ReferenceStatus": "",
+  "AccountType": "",
+  "Status": "active",
+  "TargetEntity": "pre-us01",
+  "BillingAddressLine1": "AD LINE 1",
+  "BillingCountry": "United States",
+  "BillingState": "NJ",
+  "BillingCity": "JERSEY CITY",
+  "BillingPostalCode": "07310-1756",
+  "AccountState": "Active",
+  "AccountRecordType": "Client",
+  "AccountOwner": "qaadmin",
+  "LocalTime": "Eastern Standard Time",
+  "AccountStatus": "Active",
+  "RelatedContact": [],
+  "Watcher": []
+}

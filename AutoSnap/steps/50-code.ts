@@ -1,0 +1,1 @@
+await page.getByTestId('proceed-btn').click({  force: true , timeout: 20000 });

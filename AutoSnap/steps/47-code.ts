@@ -1,0 +1,1 @@
+await page.getByTestId('charBtn').click({  force: true , timeout: 20000 });

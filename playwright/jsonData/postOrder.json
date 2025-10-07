@@ -1,0 +1,360 @@
+{
+	"id": "bundle-transaction",
+	"resourceType": "Bundle",
+	"type": "transaction",
+	"entry": [
+		{
+			"request": {
+				"method": "POST",
+				"url": "/Encounter/"
+			},
+			"fullUrl": "urn:uuid4783dc0c-e1ca-46cf-983f-855f3bb593c8",
+			"resource": {
+				"fullUrl": "urn:uuid4783dc0c-e1ca-46cf-983f-855f3bb593c8",
+				"status": "planned",
+				"id": "-1",
+				"resourceType": "Encounter",
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://hl7.org/fhir/identifier-type",
+									"code": "ACSN",
+									"display": "Accession ID"
+								}
+							]
+						},
+						"system": "urn:oid:1.3.4.5.6.7",
+						"value": "316272",
+						"assigner": {
+							"id": "1",
+							"reference": "Organization/1",
+							"display": "RAMSOFT"
+						}
+					},
+					{
+						"use": "usual",
+						"type": {
+							"coding": [
+								{
+									"code": "PLAC"
+								}
+							]
+						},
+						"system": "",
+						"value": "PlaceOrder1"
+					},
+					{
+						"use": "usual",
+						"type": {
+							"coding": [
+								{
+									"code": "FILL"
+								}
+							]
+						},
+						"system": "",
+						"value": "FillerOrder1"
+					}
+				],
+				"extension": [
+					{
+						"url": "http://www.ramsoft.com/fhir/extension/coverage/visitCoverages",
+						"extension": []
+					},
+					{
+						"extension": [
+							{
+								"id": "7099d089-110c-45b3-986f-07d95f764418",
+								"extension": [
+									{
+										"url": "author",
+										"valueReference": {
+											"id": "633114",
+											"reference": "633114",
+											"display": "Sharma, Akhilesh"
+										}
+									},
+									{
+										"url": "text",
+										"valueString": "second card"
+									},
+									{
+										"url": "time",
+										"valueDateTime": "2025-05-27T12:30:09.807000+00:00"
+									},
+									{
+										"url": "date",
+										"valueDateTime": "2025-05-26T18:30:00.000000+00:00"
+									}
+								],
+								"url": "accident"
+							},
+							{
+								"id": "cec39931-de79-451c-8aeb-2b6c848897e1",
+								"extension": [
+									{
+										"url": "author",
+										"valueReference": {
+											"id": "633114",
+											"reference": "633114",
+											"display": "Sharma, Akhilesh"
+										}
+									},
+									{
+										"url": "text",
+										"valueString": "First card"
+									},
+									{
+										"url": "time",
+										"valueDateTime": "2025-05-27T12:28:59.451000+00:00"
+									},
+									{
+										"url": "date",
+										"valueDateTime": "2025-05-26T18:30:00.000000+00:00"
+									}
+								],
+								"url": "accident"
+							}
+						],
+						"url": "http://www.ramsoft.com/fhir/extension/encounter/accident"
+					},
+					{
+						"url": "financialClass",
+						"valueCoding": {
+							"code": "CP",
+							"display": "CAPITATED"
+						}
+					}
+				],
+				"accidentStateDisplay": "",
+				"meta": {},
+				"class": {
+					"code": "IMP",
+					"display": "inpatient encounter"
+				},
+				"subject": {
+					"id": "PATIENT_ID",
+					"reference": "Patient/PATIENT_ID",
+					"display": "PATIENT_NAME"
+				},
+				"hospitalization": {
+					"specialCourtesy": [
+						{
+							"coding": [
+								{
+									"code": "EXT",
+									"display": "extended courtesy"
+								}
+							]
+						}
+					],
+					"specialArrangement": [
+						{
+							"coding": [
+								{
+									"code": "wheel",
+									"display": "Wheelchair"
+								}
+							]
+						}
+					],
+					"location": [
+						{
+							"location": {
+								"display": "Patient Location 1"
+							}
+						}
+					]
+				},
+				"period": {
+					"start": "2020-08-17T17:00:00.000Z"
+				},
+				"location": [
+					{
+						"location": {
+							"display": ""
+						}
+					}
+				],
+				"serviceProvider": {
+					"id": "1",
+					"reference": "organization/1",
+					"display": "RAMSOFT"
+				}
+			}
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "/ServiceRequest/"
+			},
+			"fullUrl": "urn:uuid77a31d88-d615-47aa-8274-fb4126b0a964",
+			"resource": {
+				"id": "-1",
+				"resourceType": "ServiceRequest",
+				"active": true,
+				"status": "active",
+				"intent": "order",
+				"priority": "ROUTINE",
+				"priorityId": "",
+				"occurrenceDateTime": "2020-08-18T08:16:41.372Z",
+				"authoredOn": "2022-01-31T01:42:00.000Z",
+				"requester": {
+					"id": "1",
+					"reference": "Practitioner/1",
+					"display": "ADMIN",
+					"extension": [
+						{
+							"url": "http://www.ramsoft.com/fhir/StructureDefinition/organization",
+							"valueReference": {
+								"id": "1",
+								"reference": "Organization/1",
+								"display": "RAMSOFT"
+							}
+						}
+					]
+				},
+				"code": {
+					"coding": [
+						{
+							"id": "-1",
+							"ramsoftId": "-1",
+							"code": "STUDY_TYPE3",
+							"display": "Corrupti voluptatem aut quis voluptas.",
+							"extension": [
+								{
+									"url": "http://www.ramsoft.com/fhir/StructureDefinition/studyDateTime",
+									"valueDateTime": "2020-08-18T08:18:00.000Z"
+								},
+								{
+									"url": "http://www.ramsoft.com/fhir/StructureDefinition/modality",
+									"extension": [
+										{
+											"url": "text",
+											"valueCoding": {
+												"code": "CT"
+											}
+										}
+									]
+								},
+								{
+									"url": "http://www.ramsoft.com/fhir/extension/department",
+									"valueReference": {
+										"display": "E2E-DEPARTMENT"
+									}
+								}
+							]
+						}
+					]
+				},
+				"reasonCode": [
+					{
+						"coding": [
+							{
+								"id": "-2",
+								"code": "A00.0",
+								"display": "Cholera due to Vibrio cholerae 01, biovar cholerae"
+							}
+						]
+					},
+					{
+						"coding": [
+							{
+								"id": "-1",
+								"code": "A00.1",
+								"display": "Cholera due to Vibrio cholerae 01, biovar eltor"
+							}
+						]
+					}
+				],
+				"extension": [
+					{
+						"url": "http://www.ramsoft.com/fhir/StructureDefinition/cds-appropriate",
+						"valueCoding": {
+							"code": "LA33-6",
+							"display": "Yes"
+						}
+					},
+					{
+						"url": "http://www.ramsoft.com/fhir/StructureDefinition/cds-appropriateUseCriteria",
+						"valueString": "Order Appropriateness - Appropriate Use Criteria"
+					},
+					{
+						"url": "http://www.ramsoft.com/fhir/StructureDefinition/cds-id",
+						"valueString": "Order Appropriateness - CDS ID data"
+					},
+					{
+						"url": "http://www.ramsoft.com/fhir/StructureDefinition/cds-comments",
+						"valueString": "Order Appropriateness - Comment data"
+					},
+					{
+						"url": "http://www.ramsoft.com/fhir/StructureDefinition/customfield1",
+						"valueString": "Order - Custom Field 1"
+					},
+					{
+						"url": "http://www.ramsoft.com/fhir/StructureDefinition/customfield2",
+						"valueString": "Order - Custom Field 2"
+					},
+					{
+						"url": "http://www.ramsoft.com/fhir/StructureDefinition/custommemo1",
+						"valueString": "Order - Custom Memo 1"
+					},
+					{
+						"url": "http://www.ramsoft.com/fhir/us/core/StructureDefinition/consulting-physician",
+						"extension": [
+							{
+								"url": "detailed",
+								"valueReference": {
+									"id": "1",
+									"reference": "Practitioner/1",
+									"display": "ADMIN",
+									"extension": [
+										{
+											"url": "http://www.ramsoft.com/fhir/StructureDefinition/facility",
+											"valueReference": {
+												"id": "1",
+												"reference": "Organization/1",
+												"display": "RAMSOFT"
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				],
+				"visitNumber": "",
+				"supportingInfo": [
+					{
+						"display": ""
+					}
+				],
+				"note": [
+					{
+						"text": "Order - Note - Comment 1"
+					}
+				],
+				"relevantHistory": [
+					{
+						"display": "History data"
+					}
+				],
+				"subject": {
+					"id": "PATIENT_ID",
+					"reference": "Patient/PATIENT_ID",
+					"display": "PATIENT_NAME",
+					"extension": []
+				},
+				"encounter": {
+					"reference": "urn:uuid4783dc0c-e1ca-46cf-983f-855f3bb593c8",
+					"display": ""
+				},
+				"enteredBy": "EnteredBy Admin",
+				"requestingService": "Request Service 1",
+				"phone": "(226) 111-222"
+			}
+		}
+	]
+}

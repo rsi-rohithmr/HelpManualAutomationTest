@@ -1,0 +1,1 @@
+await page.locator('div').filter({ has: page.getByTestId('patient-card-title') }).first().screenshot({ path: 'img_as/documentexplorer_E.png' });

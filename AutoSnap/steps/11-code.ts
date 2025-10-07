@@ -1,0 +1,1 @@
+await page.getByRole('menuitem', { name: 'Link Series' }).click({ force: true, timeout: 20000 });
